@@ -1,0 +1,26 @@
+📄 .gitignore
+📄 next-env.d.ts
+📄 next.config.ts
+📄 package-lock.json
+📄 package.json
+📁 public
+  📁 images
+    📁 BG
+      📄 under-water-1.png
+      📄 under-water-2.png
+      📄 under-water-3.png
+      📄 under-water-5.png
+📄 README.md
+📁 scripts
+  📄 file-structure.txt
+  📄 generate-tree.js
+📁 src
+  📁 app
+    📁 (site)
+      📄 favicon.ico
+      📄 layout.tsx
+      📄 page.tsx
+    📁 admin
+  📁 styles
+    📄 globals.css
+📄 tsconfig.json

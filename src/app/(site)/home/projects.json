@@ -1,0 +1,90 @@
+[
+  {
+    "id": "dusit-thani",
+    "title": "Dusit Thani",
+    "year": 2024,
+    "location": "ต.ชะอำ อ.ชะอำ จ.เพชรบุรี",
+    "typeOfWork": "งานสำรวจน้ำบาดาล",
+    "businessType": "โรงแรม, รีสอร์ท",
+    "url": "http://www.siamgroundwater.com/?project=dusit-thani",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/Dusit-Hotel_01-01-1024x768.jpg",
+    "category": "private-organization"
+  },
+  {
+    "id": "tri-vananda",
+    "title": "TRI VANANDA",
+    "year": 2024,
+    "location": "ต.กษัตรี อ.ถลาง จ.ภูเก็ต",
+    "typeOfWork": "งานสำรวจน้ำบาดาล",
+    "businessType": "โรงแรม, รีสอร์ท",
+    "url": "http://www.siamgroundwater.com/?project=tri-vananda",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/TRI-VANANDA_01-01-1024x768.jpg",
+    "category": "private-organization"
+  },
+  {
+    "id": "rosewood-phuket",
+    "title": "ROSEWOOD PHUKET",
+    "year": 2024,
+    "location": "ต.ป่าตอง อ.กะทู้ จ.ภูเก็ต",
+    "typeOfWork": "งานสำรวจน้ำบาดาล",
+    "businessType": "โรงแรม, รีสอร์ท",
+    "url": "http://www.siamgroundwater.com/?project=rosewood-phuket",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/rosewood_04-02-1024x768.jpg",
+    "category": "private-organization"
+  },
+  {
+    "id": "intercontinental-phang-nga-bay-resort",
+    "title": "Intercontinental Phang Nga Bay Resort",
+    "year": 2024,
+    "location": "เสม็ดนางชี พังงา",
+    "typeOfWork": "งานสำรวจน้ำบาดาล",
+    "businessType": "โรงแรม, รีสอร์ท",
+    "url": "http://www.siamgroundwater.com/?project=intercontinental-phang-nga-bay-resort",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/01/cover_nangchee-02-02-1024x768.jpg",
+    "category": "private-organization"
+  },
+  {
+    "id": "sprinkle-factory",
+    "title": "โรงงานน้ำดื่ม สปริงเคิล SPRINKLE",
+    "year": 2023,
+    "location": "ต.ชะแมบ อ.วังน้อย จ.พระนครศรีอยุธยา",
+    "typeOfWork": "งานแก้ไขโครงการที่เจาะน้ำบาดาลแล้วมีปัญหา",
+    "businessType": "โรงงาน",
+    "url": "http://www.siamgroundwater.com/?project=โรงงานน้ําดื่ม-สปริงเคิล",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/04/Spingkle-วังน้อย-อยุธยา-01-1024x768.jpg",
+    "category": "private-organization"
+  },
+  {
+    "id": "ob-tuaphothong",
+    "title": "องค์การบริหารส่วนตำบลโพธิ์ทอง",
+    "year": 2018,
+    "location": "ต.โพธิ์ทอง อ.ปางศิลาทอง จ.กำแพงเพชร",
+    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
+    "businessType": "หน่วยงานราชการ",
+    "url": "http://www.siamgroundwater.com/?project=องค์การบริหารส่วนตำบลโพธิ์ทอง",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/5.สูบทดสอบปริมาณน้ำ-2-1024x768.jpg",
+    "category": "government-project"
+  },
+  {
+    "id": "isaan-groundwater-map",
+    "title": "โครงการแผนที่น้ำบาดาล (อีสานกลาง)",
+    "year": 2017,
+    "location": "พื้นที่ภาคตะวันออกเฉียงเหนือตอนกลาง พื้นที่ 1",
+    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
+    "businessType": "โครงการกรมทรัพยากรน้ำบาดาล",
+    "url": "http://www.siamgroundwater.com/?project=โครงการแผนที่น้ำบาดาล-อ",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/ปกโครงการแผนที่น้ำบาดาลอีสานกลาง-พื้นที่-1-1024x768.jpg",
+    "category": "government-project"
+  },
+  {
+    "id": "sasin",
+    "title": "สถาบันบัณฑิตบริหารธุรกิจศศินทร์ แห่งจุฬาลงกรณ์มหาวิทยาลัย",
+    "year": 2012,
+    "location": "อ.ตะกั่วทุ่ง จ.พังงา",
+    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
+    "businessType": "สถาบันการศึกษา",
+    "url": "http://www.siamgroundwater.com/?project=สถาบนบณฑตบรหารธรก",
+    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/9.ระบบการทำงานของบ่อ-1024x768.jpg",
+    "category": "government-project"
+  }
+]

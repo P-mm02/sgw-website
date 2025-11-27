@@ -1,0 +1,15 @@
+// src/app/admin/layout.tsx
+export default function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <header>Admin</header>
+        <main>{children}</main>
+      </body>
+    </html>
+  )
+}

@@ -1,0 +1,201 @@
+/* ========== NAVBAR ========== */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: hsla(181, 100%, 14%, 0.943);
+}
+
+/* full-height inner bar */
+.navbar-inner {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* logo area */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-logo img {
+  display: block;
+  height: 100%; /* fill bar vertically */
+  width: auto;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover img{
+  scale: 1.1;
+}
+
+/* center nav */
+.navbar-nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* wrapper for each top-level item */
+.navbar-item {
+  position: relative; /* for sub nav positioning */
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.navbar-text {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* each link fills the bar height */
+.navbar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  height: 100%; /* now this is real 100% of bar */
+  color: #f5f5f5;
+  white-space: nowrap;
+  transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #e0f0d0;
+  background-color: #00393a;  
+}
+
+.navbar-link:hover .navbar-text , .navbar-subnav-link:hover .navbar-text {
+  transform: scale(1.05);
+}
+
+/* highlight parent if it has subnav and is hovered */
+.has-subnav:hover .navbar-link {
+  background-color: #00393a;
+}
+
+/* ========== SUB NAV ========== */
+
+.navbar-subnav {
+  z-index: 51;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsla(181, 100%, 14%, 0.943);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+  display: none;
+  flex-direction: column;
+  width: fit-content;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  z-index: 100;
+}
+
+/* show submenu on hover of parent item */
+.navbar-item:hover .navbar-subnav {
+  display: flex;
+}
+
+.navbar-subnav:hover{
+  display: flex;
+}
+
+/* each subnav line */
+.navbar-subnav-link {
+  display: block;
+  padding: 1rem 1rem;
+  color: #f5f5f5;
+  font-size: 0.98rem;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.4;
+  white-space: nowrap; 
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.navbar-subnav-link:hover {
+  color: #e0f0d0;
+  background-color: #00393a;
+}
+
+/* language area on the right */
+.navbar-lang {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0rem;
+  height: 100%; /* align with bar height */
+}
+
+.navbar-lang-btn {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 3rem;
+}
+
+.navbar-lang-btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* responsive tweaks */
+@media (max-width: 1024px) {
+  .navbar-inner {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    height: 6rem;
+  }
+
+  .navbar-nav {
+    gap: 1.75rem;
+    font-size: 1rem;
+  }
+
+  .navbar-logo img {
+    padding: 0.5rem;
+  }
+
+  .navbar-subnav {
+    min-width: 14rem;
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-inner {
+    height: 4rem;
+  }
+
+  .navbar-nav {
+    display: none; /* later you can replace with a mobile menu */
+  }
+
+  .navbar-lang {
+    gap: 0.15rem;
+  }
+
+  .navbar-lang-btn {
+    width: 2.4rem;
+  }
+}

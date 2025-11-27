@@ -1,90 +1,889 @@
-[
-  {
-    "id": "dusit-thani",
-    "title": "Dusit Thani",
-    "year": 2024,
-    "location": "ต.ชะอำ อ.ชะอำ จ.เพชรบุรี",
-    "typeOfWork": "งานสำรวจน้ำบาดาล",
-    "businessType": "โรงแรม, รีสอร์ท",
-    "url": "http://www.siamgroundwater.com/?project=dusit-thani",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/Dusit-Hotel_01-01-1024x768.jpg",
-    "category": "private-organization"
-  },
-  {
-    "id": "tri-vananda",
-    "title": "TRI VANANDA",
-    "year": 2024,
-    "location": "ต.กษัตรี อ.ถลาง จ.ภูเก็ต",
-    "typeOfWork": "งานสำรวจน้ำบาดาล",
-    "businessType": "โรงแรม, รีสอร์ท",
-    "url": "http://www.siamgroundwater.com/?project=tri-vananda",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/TRI-VANANDA_01-01-1024x768.jpg",
-    "category": "private-organization"
-  },
-  {
-    "id": "rosewood-phuket",
-    "title": "ROSEWOOD PHUKET",
-    "year": 2024,
-    "location": "ต.ป่าตอง อ.กะทู้ จ.ภูเก็ต",
-    "typeOfWork": "งานสำรวจน้ำบาดาล",
-    "businessType": "โรงแรม, รีสอร์ท",
-    "url": "http://www.siamgroundwater.com/?project=rosewood-phuket",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/03/rosewood_04-02-1024x768.jpg",
-    "category": "private-organization"
-  },
-  {
-    "id": "intercontinental-phang-nga-bay-resort",
-    "title": "Intercontinental Phang Nga Bay Resort",
-    "year": 2024,
-    "location": "เสม็ดนางชี พังงา",
-    "typeOfWork": "งานสำรวจน้ำบาดาล",
-    "businessType": "โรงแรม, รีสอร์ท",
-    "url": "http://www.siamgroundwater.com/?project=intercontinental-phang-nga-bay-resort",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/01/cover_nangchee-02-02-1024x768.jpg",
-    "category": "private-organization"
-  },
-  {
-    "id": "sprinkle-factory",
-    "title": "โรงงานน้ำดื่ม สปริงเคิล SPRINKLE",
-    "year": 2023,
-    "location": "ต.ชะแมบ อ.วังน้อย จ.พระนครศรีอยุธยา",
-    "typeOfWork": "งานแก้ไขโครงการที่เจาะน้ำบาดาลแล้วมีปัญหา",
-    "businessType": "โรงงาน",
-    "url": "http://www.siamgroundwater.com/?project=โรงงานน้ําดื่ม-สปริงเคิล",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2025/04/Spingkle-วังน้อย-อยุธยา-01-1024x768.jpg",
-    "category": "private-organization"
-  },
-  {
-    "id": "ob-tuaphothong",
-    "title": "องค์การบริหารส่วนตำบลโพธิ์ทอง",
-    "year": 2018,
-    "location": "ต.โพธิ์ทอง อ.ปางศิลาทอง จ.กำแพงเพชร",
-    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
-    "businessType": "หน่วยงานราชการ",
-    "url": "http://www.siamgroundwater.com/?project=องค์การบริหารส่วนตำบลโพธิ์ทอง",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/5.สูบทดสอบปริมาณน้ำ-2-1024x768.jpg",
-    "category": "government-project"
-  },
-  {
-    "id": "isaan-groundwater-map",
-    "title": "โครงการแผนที่น้ำบาดาล (อีสานกลาง)",
-    "year": 2017,
-    "location": "พื้นที่ภาคตะวันออกเฉียงเหนือตอนกลาง พื้นที่ 1",
-    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
-    "businessType": "โครงการกรมทรัพยากรน้ำบาดาล",
-    "url": "http://www.siamgroundwater.com/?project=โครงการแผนที่น้ำบาดาล-อ",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/ปกโครงการแผนที่น้ำบาดาลอีสานกลาง-พื้นที่-1-1024x768.jpg",
-    "category": "government-project"
-  },
-  {
-    "id": "sasin",
-    "title": "สถาบันบัณฑิตบริหารธุรกิจศศินทร์ แห่งจุฬาลงกรณ์มหาวิทยาลัย",
-    "year": 2012,
-    "location": "อ.ตะกั่วทุ่ง จ.พังงา",
-    "typeOfWork": "งานสำรวจน้ำบาดาล, งานเจาะบ่อน้ำบาดาล",
-    "businessType": "สถาบันการศึกษา",
-    "url": "http://www.siamgroundwater.com/?project=สถาบนบณฑตบรหารธรก",
-    "imageUrl": "http://www.siamgroundwater.com/wp-content/uploads/2024/11/9.ระบบการทำงานของบ่อ-1024x768.jpg",
-    "category": "government-project"
-  }
-]
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.4410424, 8.2382035]
+      },
+      "properties": {
+        "title": "Intercontinental Phang Nga Bay Resort",
+        "url": "/project/intercontinental-phang-nga-bay-resort/",
+        "logo": "logoImage1",
+        "type": "resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.6487821, 18.45078]
+      },
+      "properties": {
+        "title": "โรงงานน้ำดื่ม SK FACTORY ปากซัน ลาว",
+        "url": "/project/โรงงานน้ำดื่ม-sk-factory-ปากซัน-ล",
+        "logo": "logoImage2",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.751974, 14.5898818]
+      },
+      "properties": {
+        "title": "โรงงานผลิตน้ำแร่เกรดพีเมี่ยม",
+        "url": "/project/โรงงานผลิตน้ำแร่เกรดพี",
+        "logo": "logoImage3",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.29134615100094, 15.891624932018866]
+      },
+      "properties": {
+        "title": "โครงการแผนที่น้ำบาดาล (อีสานกลาง)",
+        "url": "/project/โครงการแผนที่น้ำบาดาล-อ",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.5842785, 13.8824532]
+      },
+      "properties": {
+        "title": "บริษัท เอ็นเอ็กซ์พี แมนูแฟคเจอริ่ง (ไทยแลนด์) จำกัด",
+        "url": "/project/บริษัท-เอ็นเอ็กซ์พี-แมนู",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.9070152, 12.8302805]
+      },
+      "properties": {
+        "title": "บริษัท อิเควเตอร์ โซลาร์ วัน จำกัด",
+        "url": "/project/บริษัท-อิเควเตอร์-โซลาร์",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.2655368, 8.7634821]
+      },
+      "properties": {
+        "title": "Avani Resort & SPA - KhaoLak",
+        "url": "/project/avani-resort-spa-khaolak",
+        "logo": "logoImage",
+        "type": "resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.3677009, 7.9056936]
+      },
+      "properties": {
+        "title": "Kempinski Resort and Spa",
+        "url": "/project/projectDetail",
+        "logo": "logoImage",
+        "type": "resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.0105, 12.9235396]
+      },
+      "properties": {
+        "title": "Pattaya International Pigeon Race (สนามแข่งนกพิราบนานาชาติพัทยา)",
+        "url": "/project/pattaya-international-pigeon-race-สนามแข่งนกพิราบนาน",
+        "logo": "logoImage",
+        "type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.1079864, 7.9051537]
+      },
+      "properties": {
+        "title": "น้ำพุร้อนเค็ม รีสอร์ท",
+        "url": "/project/น้ำพุร้อนเค็ม-รีสอร์ท",
+        "logo": "logoImage",
+        "type": "resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.7094572, 16.208588]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลคลองขลุง",
+        "url": "/project/องค์การบริหารส่วนตำบลค",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.8421311, 14.380561]
+      },
+      "properties": {
+        "title": "บริษัท กระเบื้องหลังคาเซรามิคไทย จำกัด",
+        "url": "/project/บริษัท-กระเบื้องหลังคาเ",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.7401483, 16.0480602]
+      },
+      "properties": {
+        "title": "บริษัท กันกุล พาวเวอร์เจน จำกัด",
+        "url": "/project/บริษัท-กันกุล-พาวเวอร์เจ",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.8397885, 14.3699487]
+      },
+      "properties": {
+        "title": "บริษัท การ์เดียนอินดัสทรีส์ คอร์ป จำกัด",
+        "url": "/project/บริษัท-การ์เดียนอินดัสท",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.4577469, 14.7648507]
+      },
+      "properties": {
+        "title": "บริษัท กิจพูนชัย จำกัด",
+        "url": "/project/บริษัท-กิจพูนชัย-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.8464812, 12.0913676]
+      },
+      "properties": {
+        "title": "บริษัท กุยบุรีผลไม้กระป๋อง จำกัด",
+        "url": "/project/บริษัท-กุยบุรีผลไม้กระป",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.8464812, 12.0913676]
+      },
+      "properties": {
+        "title": "บริษัท กุยบุรีผลไม้กระป๋อง จำกัด",
+        "url": "/project/บริษัท-กุยบุรีผลไม้กระ-2",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.4946614, 13.7438643]
+      },
+      "properties": {
+        "title": "บริษัท ช.การช่าง จำกัด (มหาชน)",
+        "url": "/project/บริษัท-ช-การช่าง-จำกัด-มห",
+        "logo": "logoImage",
+        "type": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.4852881, 13.7383192]
+      },
+      "properties": {
+        "title": "บริษัท ช.การช่าง จำกัด (มหาชน)",
+        "url": "/project/บริษัท-ช-การช่าง-จำกัด-มห",
+        "logo": "logoImage",
+        "type": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.7846621, 16.2874963]
+      },
+      "properties": {
+        "title": "บริษัท ซีพีเอฟ (ประเทศไทย) จำกัด (มหาชน)",
+        "url": "/project/บริษัท-ซีพีเอฟ-ประเทศไท",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.7992019, 16.3432235]
+      },
+      "properties": {
+        "title": "บริษัท ซีพีแรม จำกัด",
+        "url": "/project/บริษัท-ซีพีแรม-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.8144588, 14.3024468]
+      },
+      "properties": {
+        "title": "บริษัท ทิปโก้ เอฟแอนด์บี จำกัด",
+        "url": "/project/บริษัท-ทิปโก้-เอฟแอนด์บี",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.8295276, 18.9041206]
+      },
+      "properties": {
+        "title": "บริษัท ทิปโก้ฟูดส์ จำกัด",
+        "url": "/project/บริษัท-ทิปโก้ฟูดส์-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.7866867, 11.8735836]
+      },
+      "properties": {
+        "title": "บริษัท ทิปโก้ฟูดส์ จำกัด (มหาชน)",
+        "url": "/project/บริษัท-ทิปโก้ฟูดส์-จำกั-2",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.645904, 14.3269677]
+      },
+      "properties": {
+        "title": "บริษัท นิคอน (ประเทศไทย) จำกัด",
+        "url": "/project/บริษัท-นิคอน-ประเทศไทย-จ",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.3366563, 12.8796232]
+      },
+      "properties": {
+        "title": "บริษัท บริดจสโตน คาร์บอน แบล็ค จำกัด",
+        "url": "/project/บริษัท-บริดจสโตน-คาร์บอน",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.7257623, 15.4623335]
+      },
+      "properties": {
+        "title": "บริษัท บางจาก โซลาร์เอ็นเนอร์ยี จำกัด",
+        "url": "/project/บริษัท-บางจาก-โซลาร์เอ็น",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.7374309, 15.1305517]
+      },
+      "properties": {
+        "title": "บริษัท บางจาก โซลาร์เอ็นเนอร์ยี จำกัด",
+        "url": "/project/บริษัท-บางจาก-โซลาร์เอ็-2",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.862536, 19.987904]
+      },
+      "properties": {
+        "title": "บริษัท บุญรอดบริวเวอรี่ จำกัด",
+        "url": "/project/บริษัท-บุญรอดบริวเวอรี่",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.4554073, 14.7321669]
+      },
+      "properties": {
+        "title": "บริษัท ปตท. จำกัด (มหาชน)",
+        "url": "/project/บริษัท-ปตท-จำกัด-มหาชน",
+        "logo": "logoImage",
+        "type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.0120321, 9.7031288]
+      },
+      "properties": {
+        "title": "บริษัท มิวกี้ เบย์ จำกัด",
+        "url": "/project/บริษัท-มิวกี้-เบย์-จำกัด",
+        "logo": "logoImage",
+        "type": "island, resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.9471996, 14.6681669]
+      },
+      "properties": {
+        "title": "บริษัท มีบรอม อินดัสเทรียล จำกัด",
+        "url": "/project/บริษัท-มีบรอม-อินดัสเทรี",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.0524708, 18.6760448]
+      },
+      "properties": {
+        "title": "บริษัท ลานนาเกษตรอุตสาหกรรม จำกัด",
+        "url": "/project/บริษัท-ลานนาเกษตรอุตสาห",
+        "logo": "logoImage",
+        "type": "agriculture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.5972925, 13.7797025]
+      },
+      "properties": {
+        "title": "บริษัท วีนัสเธร็ด จำกัด",
+        "url": "/project/บริษัท-วีนัสเธร็ด-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.9095137, 14.4060519]
+      },
+      "properties": {
+        "title": "บริษัท สยามซานิทาริแวร์ อินดัสทรี จำกัด",
+        "url": "/project/บริษัท-สยามซานิทาริแวร์",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.9260324, 13.6132686]
+      },
+      "properties": {
+        "title": "บริษัท สยามโตชู จำกัด",
+        "url": "/project/บริษัท-สยามโตชู-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.5967656, 14.4369625]
+      },
+      "properties": {
+        "title": "บริษัท สวัสดิ์ไพบูลย์ พอร์ต จำกัด",
+        "url": "/project/บริษัท-สวัสดิ์ไพบูลย์-พอ",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.5720013, 13.8891351]
+      },
+      "properties": {
+        "title": "บริษัท สหฟาร์ม จำกัด",
+        "url": "/project/บริษัท-สหฟาร์ม-จำกัด",
+        "logo": "logoImage",
+        "type": "agriculture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.1256468, 15.2275209]
+      },
+      "properties": {
+        "title": "บริษัท สหฟาร์ม จำกัด",
+        "url": "/project/บริษัท-สหฟาร์ม-จำกัด-2",
+        "logo": "logoImage",
+        "type": "agriculture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.024164, 15.1079455]
+      },
+      "properties": {
+        "title": "บริษัท สหฟาร์ม จำกัด",
+        "url": "/project/บริษัท-สหฟาร์ม-จำกัด-3",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.842127, 14.35877]
+      },
+      "properties": {
+        "title": "บริษัท อัลเลโกร ไมโครซิสเตมส์ (ไทยแลนด์) จำกัด",
+        "url": "/project/บริษัท-อัลเลโกร-ไมโครซิส",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.51021, 13.74204]
+      },
+      "properties": {
+        "title": "บริษัท อิตาเลียนไทย ดีเวล๊อปเมนต์ จำกัด (มหาชน)",
+        "url": "/project/บริษัท-อิตาเลียนไทย-ดีเว",
+        "logo": "logoImage",
+        "type": "train"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.9106643, 14.4086869]
+      },
+      "properties": {
+        "title": "บริษัท เซรามิคอุตสาหกรรมไทย จำกัด",
+        "url": "/project/บริษัท-เซรามิคอุตสาหกรร",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.4231324, 18.3884679]
+      },
+      "properties": {
+        "title": "บริษัท อี เอ โซล่า จำกัด",
+        "url": "/project/บริษัท-อี-เอ-โซล่า-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.4547608, 13.696136]
+      },
+      "properties": {
+        "title": "บริษัท เพียวเคมม์ จำกัด",
+        "url": "/project/บริษัท-เพียวเคมม์-จำกัด",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.2484323, 15.1637872]
+      },
+      "properties": {
+        "title": "บริษัท เฟมีน่า เลซ ไดย์ เวิร์คส จำกัด",
+        "url": "/project/บริษัท-เฟมีน่า-เลซ-ไดย์-เ",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.1805054, 9.0163422]
+      },
+      "properties": {
+        "title": "บริษัท เสริมสุข จำกัด ( มหาชน) โรงงานสุราษฎร์ธานี",
+        "url": "/project/บริษัท-เสริมสุข-จำกัด-มห",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.0544833, 14.9417548]
+      },
+      "properties": {
+        "title": "บริษัท เสริมสุข จำกัด (มหาชน) โรงงานนครราชสีมา",
+        "url": "/project/บริษัท-เสริมสุข-จำกัด-มห-2",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.114626, 15.6843183]
+      },
+      "properties": {
+        "title": "บริษัท เสริมสุข จำกัด (มหาชน) โรงงานนครสวรรค์",
+        "url": "/project/บริษัท-เสริมสุข-จำกัด-มห-3",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.0444369, 18.5919002]
+      },
+      "properties": {
+        "title": "บริษัท โกลบอล ยูทิลิตี้ เซอร์วิส จำกัด",
+        "url": "/project/บริษัท-โกลบอล-ยูทิลิตี้",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.6842437, 13.5482155]
+      },
+      "properties": {
+        "title": "บริษัท ไทยบอนเนต เทรดดิ้งโซน จำกัด",
+        "url": "/project/บริษัท-ไทยบอนเนต-เทรดดิ้",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.8251277, 14.7058965]
+      },
+      "properties": {
+        "title": "วัดถ้ำกระบอก",
+        "url": "/project/วัดถ้ำกระบอก",
+        "logo": "logoImage",
+        "type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.28271, 8.240391]
+      },
+      "properties": {
+        "title": "สถาบันบัณฑิตบริหารธุรกิจศศินทร์ แห่งจุฬาลงกรณ์มหาวิทยาลัย",
+        "url": "/project/สถาบนบณฑตบรหารธรก",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.3678748, 14.9759258]
+      },
+      "properties": {
+        "title": "สวนอุตสาหกรรมอินทรา",
+        "url": "/project/สวนอุตสาหกรรมอินทรา",
+        "logo": "logoImage",
+        "type": "factory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.0540781, 18.4963625]
+      },
+      "properties": {
+        "title": "ห้างหุ้นส่วนจำกัด เอส.เจฟาร์มอินเตอร์พิกส์",
+        "url": "/project/ห้างหุ้นส่วนจำกัด-เอส-เจ",
+        "logo": "logoImage",
+        "type": "agriculture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.7094572, 16.208588]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลคลองขลุง",
+        "url": "/project/องค์การบริหารส่วนตำบลค-2",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.792924, 16.010791]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลปางมะค่า",
+        "url": "/project/องค์การบริหารส่วนตำบลป",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.6377541, 16.0866234]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลวังหามแห",
+        "url": "/project/องค์การบริหารส่วนตำบลว",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.6203532, 16.2189657]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลวังไทร",
+        "url": "/project/องค์การบริหารส่วนตำบลว-2",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.1423456, 15.4851232]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลสระทะเล",
+        "url": "/project/องค์การบริหารส่วนตำบลส",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.7757308, 16.6354092]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลหนองหลวง",
+        "url": "/project/องค์การบริหารส่วนตำบลห",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.5283846, 15.8908049]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลเขาชนกัน",
+        "url": "/project/องค์การบริหารส่วนตำบลเ",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.9521808, 16.3972551]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลแม่แตง",
+        "url": "/project/องค์การบริหารส่วนตำบลแ",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.526036, 16.1202]
+      },
+      "properties": {
+        "title": "องค์การบริหารส่วนตำบลโพธิ์ทอง",
+        "url": "/project/องค์การบริหารส่วนตำบลโ",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.2844465, 8.0356995]
+      },
+      "properties": {
+        "title": "อนันตรา ภูเก็ต ลายัน รีสอร์ท",
+        "url": "/project/อนันตรา-ภูเก็ต-ลายัน-รีส",
+        "logo": "logoImage",
+        "type": "resort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.3673084, 16.139823]
+      },
+      "properties": {
+        "title": "โครงการพัฒนาแหล่งน้ำบาดาลเพื่อการเกษตรฯ",
+        "url": "/project/โครงการพฒนาแหลงนำบาดาล",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.7232673, 17.243411]
+      },
+      "properties": {
+        "title": "โครงการพัฒนาแหล่งน้ำบาดาลเพื่อการเกษตรฯ",
+        "url": "/project/โครงการพฒนาแหลงนำบาดาล",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.3497895, 16.1872019]
+      },
+      "properties": {
+        "title": "โครงการพัฒนาแหล่งน้ำบาดาลเพื่อการเกษตรฯ",
+        "url": "/project/โครงการพฒนาแหลงนำบาดาล",
+        "logo": "logoImage",
+        "type": "government"
+      }
+    }
+  ]
+}

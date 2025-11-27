@@ -4,51 +4,47 @@ import { useState } from 'react'
 import Link from 'next/link'
 import projectsData from '../projects.json'
 
-// 1) Types for filter + project
-type FilterCategory = 'all' | 'government-project' | 'private-organization'
-type ProjectCategory = Exclude<FilterCategory, 'all'>
+// ---- Types ----
+type ProjectContent = {
+  image: string
+  text: string
+}
 
 type Project = {
-  id: string
-  title: string
-  location: string
-  typeOfWork: string
-  businessType?: string
-  year: number // <- match JSON: number
-  url: string
-  category: ProjectCategory
-  imageUrl: string
-}
-
-// 2) Type for raw JSON structure
-type RawProject = {
-  id: string
+  _id: number
   title: string
   year: number
-  location: string
-  typeOfWork: string
-  businessType?: string
-  url: string
-  imageUrl: string
-  category: string
+  logo: string
+  projectType: string
+  lat: number
+  lng: number
+  coverImage: string
+  category: string[] // 👈 array of strings
+  contents: ProjectContent[]
 }
 
-// 3) Safely map JSON -> typed projects
-const rawProjects = projectsData as RawProject[]
+// Filter categories
+type FilterCategory =
+  | 'all'
+  | 'งานโครงการ'
+  | 'นิคม โรงงาน'
+  | 'อาหาร เครื่องดื่ม'
+  | 'โรงแรม รีสอร์ท'
+  | 'เกาะ'
+  | 'เหมืองแร่ พลังงาน'
+  | 'ฟาร์ม เกษตร ปศุสัตว์'
+  | 'วัด โรงเรียน'
+  | 'Dewatering'
 
-const projects: Project[] = rawProjects.map((p) => ({
-  ...p,
-  category: p.category as ProjectCategory,
-}))
+const projects = projectsData as Project[]
 
-// 4) Component
 export default function ProjectsSection() {
   const [category, setCategory] = useState<FilterCategory>('all')
 
-  const filteredProjects: Project[] =
+  const filteredProjects =
     category === 'all'
       ? projects
-      : projects.filter((p) => p.category === category)
+      : projects.filter((p) => p.category.includes(category))
 
   return (
     <section className="home-projects thirdBackground">
@@ -63,41 +59,102 @@ export default function ProjectsSection() {
               category === 'all' ? 'active' : ''
             } filter-all`}
             onClick={() => setCategory('all')}
-            data-category="all"
           >
             ทั้งหมด
           </button>
 
           <button
             className={`filter-button ${
-              category === 'government-project' ? 'active' : ''
+              category === 'งานโครงการ' ? 'active' : ''
             }`}
-            onClick={() => setCategory('government-project')}
-            data-category="government-project"
+            onClick={() => setCategory('งานโครงการ')}
           >
-            งานรัฐบาล
+            งานโครงการ
           </button>
 
           <button
             className={`filter-button ${
-              category === 'private-organization' ? 'active' : ''
+              category === 'นิคม โรงงาน' ? 'active' : ''
             }`}
-            onClick={() => setCategory('private-organization')}
-            data-category="private-organization"
+            onClick={() => setCategory('นิคม โรงงาน')}
           >
-            งานเอกชน
+            นิคม โรงงาน
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'อาหาร เครื่องดื่ม' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('อาหาร เครื่องดื่ม')}
+          >
+            อาหาร เครื่องดื่ม
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'โรงแรม รีสอร์ท' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('โรงแรม รีสอร์ท')}
+          >
+            โรงแรม รีสอร์ท
+          </button>
+
+          <button
+            className={`filter-button ${category === 'เกาะ' ? 'active' : ''}`}
+            onClick={() => setCategory('เกาะ')}
+          >
+            เกาะ
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'เหมืองแร่ พลังงาน' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('เหมืองแร่ พลังงาน')}
+          >
+            เหมืองแร่ พลังงาน
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'ฟาร์ม เกษตร ปศุสัตว์' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('ฟาร์ม เกษตร ปศุสัตว์')}
+          >
+            ฟาร์ม เกษตร ปศุสัตว์
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'วัด โรงเรียน' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('วัด โรงเรียน')}
+          >
+            วัด โรงเรียน
+          </button>
+
+          <button
+            className={`filter-button ${
+              category === 'Dewatering' ? 'active' : ''
+            }`}
+            onClick={() => setCategory('Dewatering')}
+          >
+            Dewatering
           </button>
         </div>
       </div>
 
       <div className="projects-grid display-posts-listing">
         {filteredProjects.map((project) => (
-          <article key={project.id} className="listing-item project-card">
+          <article key={project._id} className="listing-item project-card">
             <div className="image">
-              <Link href={project.url} className="removeUnderLine">
+              <Link
+                href={project.contents?.[0]?.image || '#'}
+                className="removeUnderLine"
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={project.imageUrl}
+                  src={project.coverImage}
                   alt={project.title}
                   width={800}
                   height={600}
@@ -106,39 +163,28 @@ export default function ProjectsSection() {
               </Link>
             </div>
 
-            <Link href={project.url} className="removeUnderLine">
-              <h4
-                className="Project-Title title SP-textHead5 removeUnderLine"
-                style={{ textAlign: 'center', marginBottom: 0 }}
-              >
-                {project.title}
-              </h4>
-            </Link>
+            <h4
+              className="Project-Title title SP-textHead5 removeUnderLine"
+              style={{ textAlign: 'center', marginBottom: 0 }}
+            >
+              {project.title}
+            </h4>
 
             <h5 className="project-date SP-textHead4">{project.year}</h5>
-
-            <p
-              className="project-location SP-textHead6"
-              style={{ textAlign: 'center' }}
-            >
-              {project.location}
-            </p>
 
             <p
               className="project-type-of-work SP-textHead6"
               style={{ textAlign: 'center' }}
             >
-              {project.typeOfWork}
+              {project.projectType}
             </p>
 
-            {project.businessType && (
-              <p
-                className="project-business-type SP-hidden"
-                style={{ textAlign: 'center' }}
-              >
-                ประเภทธุรกิจ: {project.businessType}
-              </p>
-            )}
+            <p
+              className="project-category SP-textHead6"
+              style={{ textAlign: 'center' }}
+            >
+              {project.category.join(' • ')}
+            </p>
           </article>
         ))}
       </div>

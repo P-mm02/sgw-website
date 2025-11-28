@@ -1,0 +1,94 @@
+.about-container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.about-hero {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.about-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.about-content p {
+  margin-bottom: 14px;
+}
+
+.about-founder-header{
+    text-align: start;
+}
+.about-founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.about-founder img {
+  width: 22rem;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+
+  /* 3D-ish styling */
+  background: radial-gradient(circle at 30% 20%, #ffffff 0, #e8f0f5 40%, #c3d4e0 100%);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(32, 59, 76, 0.3);
+
+  transform: perspective(1000px) rotateX(8deg) rotateY(-8deg);
+  transform-origin: center center;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+.about-founder img:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-6px) scale(1.02);
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 40px rgba(32, 59, 76, 0.45);
+}
+
+.about-founder-text{
+    max-width: 40rem;
+}
+
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-container {
+    padding: 56px 24px 80px;
+  } 
+}
+

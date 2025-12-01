@@ -1,0 +1,171 @@
+'use client'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import './teams.css'
+import teamGroupsJson from './teams.json'
+
+type Person = {
+  name: string
+  role: 'leader' | 'member'
+  title?: string
+  certificates: string[]
+  imageSrc: string
+}
+
+type Team = {
+  name: string
+  people: Person[]
+}
+
+type TeamGroup = {
+  id: string
+  label: string
+  summary: string
+  teams: Team[]
+}
+
+// Cast JSON into typed structure
+const TEAM_GROUPS = teamGroupsJson as TeamGroup[]
+
+export default function Teams() {
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {}
+    TEAM_GROUPS.forEach((group) => {
+      initial[group.id] = true // open all by default
+    })
+    return initial
+  })
+
+  const toggleGroup = (id: string) => {
+    setOpenGroups((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }))
+  }
+
+  return (
+    <section className="teams-section">
+      <h2 className="teams-title">ทีมงาน สยามกราวด์วอเตอร์</h2>
+
+      {/* Summary cards (no counts, just description) */}
+      <div className="teams-summary-grid">
+        {TEAM_GROUPS.map((group) => (
+          <div key={group.id} className="teams-summary-card">
+            <div className="teams-summary-header">
+              <span className="teams-summary-label">{group.label}</span>
+            </div>
+            <p className="teams-summary-text">{group.summary}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Org-chart style groups */}
+      <div className="teams-groups">
+        {TEAM_GROUPS.map((group) => (
+          <div key={group.id} className="teams-group-card">
+            <div className="teams-group-header">
+              <button
+                type="button"
+                className="teams-group-toggle"
+                onClick={() => toggleGroup(group.id)}
+              >
+                <span className="teams-group-title">{group.label}</span>
+                <span
+                  className={
+                    openGroups[group.id]
+                      ? 'teams-group-toggle-icon open'
+                      : 'teams-group-toggle-icon'
+                  }
+                >
+                  ▾
+                </span>
+              </button>
+            </div>
+
+            {openGroups[group.id] && (
+              <div className="teams-group-body">
+                {group.teams.map((team) => {
+                  const leader = team.people.find((p) => p.role === 'leader')
+                  const members = team.people.filter((p) => p.role === 'member')
+
+                  return (
+                    <div key={team.name} className="org-team">
+                      <div className="org-team-header">
+                        <span className="org-team-name">{team.name}</span>
+                      </div>
+
+                      <div className="org-team-chart">
+                        {/* Leader row */}
+                        {leader && (
+                          <div className="org-leader-row">
+                            <PersonCard person={leader} />
+                          </div>
+                        )}
+
+                        {/* Vertical connector */}
+                        {leader && members.length > 0 && (
+                          <div className="org-connector-vertical" />
+                        )}
+
+                        {/* Members row */}
+                        {members.length > 0 && (
+                          <>
+                            <div className="org-connector-horizontal" />
+                            <div className="org-members-row">
+                              {members.map((member) => (
+                                <PersonCard
+                                  key={`${team.name}-${member.name}`}
+                                  person={member}
+                                />
+                              ))}
+                            </div>
+                          </>
+                        )}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function PersonCard({ person }: { person: Person }) {
+  const isLeader = person.role === 'leader'
+
+  return (
+    <div
+      className={`org-person-card ${
+        isLeader ? 'org-person-card-leader' : 'org-person-card-member'
+      }`}
+    >
+      <div className="org-person-avatar">
+        <Image
+          src={person.imageSrc}
+          alt={person.name}
+          width={72}
+          height={72}
+          className="org-person-avatar-image"
+        />
+      </div>
+      <div className="org-person-info">
+        <div className="org-person-top">
+          <span className="org-person-name">{person.name}</span>
+        </div>
+        {person.title && <p className="org-person-title">{person.title}</p>}
+        {person.certificates.length > 0 && (
+          <ul className="org-cert-list">
+            {person.certificates.map((cert) => (
+              <li key={cert}>{cert}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  )
+}

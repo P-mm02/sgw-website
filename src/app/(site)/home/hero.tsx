@@ -1,28 +1,31 @@
 // src/app/(site)/home/hero.tsx
 
+import './hero.css'
+
 export default function Hero() {
   return (
     <section className="home-hero">
-      <div className="headerText homeHead">
-        <h2 style={{ textAlign: 'center', fontWeight: 'bold' }}>
-          โครงการรักษ์น้ำบาดาล
-        </h2>
-        <h4 style={{ textAlign: 'center' }}>
-          เจาะบ่อคุณภาพดี ติดเครื่องสูบคุณภาพดี สูบน้ำขึ้นมาใช้ถูกวิธี
-        </h4>
-        <h4 style={{ textAlign: 'center' }}>•ทำความดีตอบแทนแผ่นดิน•</h4>
-        <h5 style={{ textAlign: 'center' }}>
+      <div className="home-hero-inner headerText homeHead">
+        <div className="home-hero-pill">โครงการรักษ์น้ำบาดาล</div>
+        <p className="home-hero-tagline">• เจาะบ่อคุณภาพดี ทำความดีตอบแทนแผ่นดิน •</p>
+
+        <h1 className="home-hero-heading">
+          WE KNOW GROUNDWATER
+        </h1>
+
+
+        <p className="home-hero-body">
           เราจะเป็นผู้นำด้านการเจาะบ่อน้ำบาดาลคุณภาพดี
           และสูบพัฒนาน้ำบาดาลขึ้นมาใช้ อย่างถูกหลักวิชาการ
-        </h5>
-        <h5 style={{ textAlign: 'center' }}>
+        </p>
+        <p className="home-hero-body">
           ป้องกัน ไม่ทำให้ชั้นน้ำเสียหาย ไม่ทำลายสิ่งแวดล้อม ดูแลรักษา
           ทุกโครงการให้มีน้ำคุณภาพดี ใช้ได้อย่างยั่งยืน คุ้มค่าการลงทุน
-        </h5>
-      </div>
+        </p>
 
-      <div className="home-company">
-        <h5>บริษัท สยามกราวด์วอเตอร์ จำกัด</h5>
+        <div className="home-hero-divider" />
+
+        <p className="home-hero-company">บริษัท สยามกราวด์วอเตอร์ จำกัด</p>
       </div>
     </section>
   )

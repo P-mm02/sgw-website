@@ -149,7 +149,8 @@ export default function ProjectsSection() {
           <article key={project._id} className="listing-item project-card">
             <div className="image">
               <Link
-                href={project.contents?.[0]?.image || '#'}
+                //href={project.contents?.[0]?.image || '#'}
+                href={'#'}
                 className="removeUnderLine"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}

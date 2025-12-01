@@ -71,14 +71,14 @@
                 "ป.ตรี ธรณีวิทยา",
                 "อบรมการสำรวจธรณีฟิสิกส์ (Resistivity)"
                 ],
-                "imageSrc": "/images/teams/survey-1-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยสำรวจ 1",
                 "role": "member",
                 "title": "ผู้ช่วยภาคสนาม และจัดเก็บข้อมูล",
                 "certificates": ["อบรมความปลอดภัยในการทำงานภาคสนาม"],
-                "imageSrc": "/images/teams/survey-1-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         },
@@ -90,14 +90,14 @@
                 "role": "leader",
                 "title": "หัวหน้าทีม / วิศวกรสนาม",
                 "certificates": ["วศ.บ. วิศวกรรมสิ่งแวดล้อม"],
-                "imageSrc": "/images/teams/survey-2-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยสำรวจ 2",
                 "role": "member",
                 "title": "ผู้ช่วยสำรวจ / จัดทำรายงานเบื้องต้น",
                 "certificates": [],
-                "imageSrc": "/images/teams/survey-2-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         }
@@ -116,14 +116,14 @@
                 "role": "leader",
                 "title": "หัวหน้าทีม / ช่างควบคุมเครื่องเจาะ",
                 "certificates": ["ใบอนุญาตผู้ควบคุมการเจาะบ่อบาดาล"],
-                "imageSrc": "/images/teams/drill-1-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยช่างเจาะ 1",
                 "role": "member",
                 "title": "ช่างประกอบท่อ และช่วยงานภาคสนาม",
                 "certificates": [],
-                "imageSrc": "/images/teams/drill-1-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         },
@@ -135,14 +135,14 @@
                 "role": "leader",
                 "title": "หัวหน้าทีม / ควบคุมคุณภาพน้ำระหว่างเจาะ",
                 "certificates": [],
-                "imageSrc": "/images/teams/drill-2-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยช่างเจาะ 2",
                 "role": "member",
                 "title": "ผู้ช่วยภาคสนาม",
                 "certificates": [],
-                "imageSrc": "/images/teams/drill-2-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         },
@@ -154,14 +154,14 @@
                 "role": "leader",
                 "title": "หัวหน้าทีม / ควบคุมความปลอดภัยหน้างาน",
                 "certificates": ["อบรม จป. เทคนิค"],
-                "imageSrc": "/images/teams/drill-3-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยช่างเจาะ 3",
                 "role": "member",
                 "title": "ผู้ช่วยช่าง และงานจัดเตรียมพื้นที่",
                 "certificates": [],
-                "imageSrc": "/images/teams/drill-3-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         }
@@ -180,14 +180,14 @@
                 "role": "leader",
                 "title": "หัวหน้าทีม / ช่างซ่อมระบบสูบน้ำและบ่อบาดาล",
                 "certificates": ["อบรมงานระบบไฟฟ้าปั๊ม และมอเตอร์"],
-                "imageSrc": "/images/teams/maintenance-lead.jpg"
+                "imageSrc": "/images/personnel/user.png"
             },
             {
                 "name": "ผู้ช่วยช่างซ่อม",
                 "role": "member",
                 "title": "ช่างผู้ช่วย / ล้างบ่อ และบำรุงรักษาระบบ",
                 "certificates": [],
-                "imageSrc": "/images/teams/maintenance-member.jpg"
+                "imageSrc": "/images/personnel/user.png"
             }
             ]
         }

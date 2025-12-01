@@ -78,10 +78,10 @@ body {
 
   /* 👇 one size per layer (last one is gradient) */
   background-size:
-    420px auto,       /* under-water-1 */
-    300px auto,       /* under-water-2 */
-    380px auto,       /* under-water-3 */
-    360px auto,       /* under-water-5 */
+    40vw auto,       /* under-water-1 */
+    30vw auto,       /* under-water-2 */
+    40vw auto,       /* under-water-3 */
+    40vw auto,       /* under-water-5 */
     100% 150vh;       /* gradient */
 
   background-repeat: no-repeat;

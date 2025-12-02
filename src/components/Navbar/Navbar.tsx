@@ -49,7 +49,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
 
-  { label: 'บรรษัทภิบาล', href: '#governance' },
+  { label: 'บรรษัทบริบาล', href: '#governance' },
   { label: 'ข่าวสารและกิจกรรม', href: '#news' },
   { label: 'ติดต่อเรา', href: '#contact' },
 ]

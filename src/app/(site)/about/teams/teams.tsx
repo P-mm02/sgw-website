@@ -32,7 +32,7 @@ export default function Teams() {
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(() => {
     const initial: Record<string, boolean> = {}
     TEAM_GROUPS.forEach((group) => {
-      initial[group.id] = true // open all by default
+      initial[group.id] = false
     })
     return initial
   })
@@ -44,14 +44,35 @@ export default function Teams() {
     }))
   }
 
+  // When clicking a summary card: open the group + scroll to its card
+  const openAndScrollToGroup = (id: string) => {
+    // make sure this group is open
+    setOpenGroups((prev) => ({
+      ...prev,
+      [id]: true,
+    }))
+
+    // scroll to the group card
+    if (typeof window !== 'undefined') {
+      const el = document.getElementById(`teams-group-${id}`)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+  }
+
   return (
     <section className="teams-section">
       <h2 className="teams-title">ทีมงาน สยามกราวด์วอเตอร์</h2>
 
-      {/* Summary cards (no counts, just description) */}
+      {/* Summary cards */}
       <div className="teams-summary-grid">
         {TEAM_GROUPS.map((group) => (
-          <div key={group.id} className="teams-summary-card">
+          <div
+            key={group.id}
+            className="teams-summary-card"
+            onClick={() => openAndScrollToGroup(group.id)}
+          >
             <div className="teams-summary-header">
               <span className="teams-summary-label">{group.label}</span>
             </div>
@@ -63,7 +84,11 @@ export default function Teams() {
       {/* Org-chart style groups */}
       <div className="teams-groups">
         {TEAM_GROUPS.map((group) => (
-          <div key={group.id} className="teams-group-card">
+          <div
+            key={group.id}
+            id={`teams-group-${group.id}`} // <- target for scrollIntoView
+            className="teams-group-card"
+          >
             <div className="teams-group-header">
               <button
                 type="button"

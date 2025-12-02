@@ -71,15 +71,15 @@ body {
   /* 👇 one position per image/gradient, in the same order */
   background-position:
     right top,        /* under-water-1 */
-    left top,         /* under-water-2 */
+    left center,         /* under-water-2 */
     right bottom,     /* under-water-3 */
     left bottom,      /* under-water-5 */
     center top;       /* gradient */
 
   /* 👇 one size per layer (last one is gradient) */
   background-size:
-    40vw auto,       /* under-water-1 */
-    30vw auto,       /* under-water-2 */
+    30vw auto,       /* under-water-1 */
+    20vw auto,       /* under-water-2 */
     40vw auto,       /* under-water-3 */
     40vw auto,       /* under-water-5 */
     100% 150vh;       /* gradient */

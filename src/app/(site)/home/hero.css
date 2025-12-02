@@ -2,7 +2,7 @@
 
 .home-hero {
   width: 100%;
-  padding: 4rem 1.5rem 3.5rem;
+  padding: 3rem 1.5rem 3.5rem;
   color: #f9fafb;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
   padding: 1rem 2.5rem;
   margin-bottom: 1.5rem;
   border-radius: 9999px;
-
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
   /* NEW COLORS */
   background: linear-gradient(135deg, #0f766e, #0e7490); /* teal */
   border: 1px solid rgba(190, 242, 255, 0.9);           /* light cyan border */
@@ -55,30 +55,31 @@
   background: linear-gradient(135deg, #0f766e, #115e59);
 }
 
-/* Main heading */
-.home-hero-heading {
-  font-size: clamp(1.8rem, 2.4vw + 1.4rem, 2.6rem);
-  line-height: 1.3;
-  font-weight: 700;
-  margin-bottom: 0.9rem;
-}
-
 /* Tagline */
 .home-hero-tagline {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: 0.2rem;
-  color: #e5f1ff;
+  color: #cbd5f5;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Main heading */
+.home-hero-heading {
+  font-size: clamp(1.8rem, 2.4vw + 1.4rem, 2.6rem);
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 /* Body text */
 .home-hero-body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: #e5e7eb;
-  max-width: 52rem;
-  margin: 0 auto 0.4rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 /* Divider between text and company name */
@@ -96,32 +97,9 @@
 
 /* Company name */
 .home-hero-company {
-  font-size: 0.95rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.14rem;
   color: #cbd5f5;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* If you already use .headerText / .homeHead somewhere, this just refines it */
-.home-hero-inner.headerText.homeHead {
-  margin: 0 auto;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .home-hero {
-    padding: 3.5rem 1.25rem 2.5rem;
-  }
-
-  .home-hero-heading {
-    font-size: clamp(1.6rem, 1.1rem + 2vw, 2.1rem);
-  }
-
-  .home-hero-body {
-    font-size: 0.95rem;
-  }
-
-  .home-hero-pill {
-    font-size: 0.8rem;
-  }
-}

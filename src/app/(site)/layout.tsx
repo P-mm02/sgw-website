@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import Navbar from '@/components/Navbar/Navbar'
+import Footer from '@/components/Footer/Footer'
 
 export const metadata: Metadata = {
   title: 'สยามกราวด์วอเตอร์ SIAM GROUNDWATER',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

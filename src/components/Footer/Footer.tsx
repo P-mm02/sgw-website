@@ -1,112 +1,124 @@
 'use client'
 
-import './Footer.css'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import LanguageSwitcher from '../Navbar/LanguageSwitcher'
-import { useTranslation } from 'react-i18next'
-
+import './Footer.css'
 
 export default function Footer() {
-  const { t } = useTranslation()
-  return (
-    <footer>
-      <div className="footer-inner">
-        {/* Column 1: Logo & tagline */}
-        <div className="footer-column">
-          <Link href="/" className="footer-logo">
-            <Image
-              src="/logo/Caroline-Clinic-Logo.svg"
-              alt="Caroline Clinic Logo"
-              className="footer-logo-img"
-              width={180}
-              height={180}
-            />
-          </Link>
-          <p className="footer-tagline">{t(`footer.logo_desc`)}</p>
-        </div>
+  const [showBackToTop, setShowBackToTop] = useState(false)
+  const currentYear = new Date().getFullYear()
 
-        {/* Column 2: Socials */}
-        <div className="footer-column">
-          <h3 className="footer-title">Social Media</h3>
-          <div className="footer-socials">
-            <a
-              href="https://www.facebook.com/profile.php?id=61557946943788"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  return (
+    <footer
+      className="footer"
+      role="contentinfo"
+      itemScope
+      itemType="https://schema.org/WPFooter"
+    >
+      <div className="footer-inner">
+        <div className="footer-row">
+          {/* Logo + company info */}
+          <div className="footer-info">
+            <Link href="/" className="footer-logo">
               <Image
-                src="/icons/Facebook_logo.png"
-                alt="Facdbook Logo"
-                className="footer-facdbook-logo"
-                width={100}
-                height={100}
+                src="/images/logo-sgw.png" // TODO: update path
+                alt="Siam Groundwater logo"
+                width={80}
+                height={80}
               />
-            </a>
-            <a
-              href="https://www.instagram.com/caroline.clinic"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/Instagram_logo.png"
-                alt="Instagram Logo"
-                className="footer-instagram-logo"
-                width={100}
-                height={100}
-              />
-            </a>
-            <a
-              href="https://line.me/R/ti/p/@104jsghy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/Line_logo.png"
-                alt="Line Logo"
-                className="footer-line-logo"
-                width={100}
-                height={100}
-              />
-            </a>
+            </Link>
+
+            <p>
+              <strong>บริษัท สยามกราวด์วอเตอร์ จำกัด</strong>
+              <br />
+              75 ซอยรามคำแหง 60 (สวนสน) แขวงหัวหมาก เขตบางกะปิ กรุงเทพฯ 10240
+            </p>
+          </div>
+
+          {/* Contact + social */}
+          <div className="footer-contact">
+            <p>โทร 0-2735-0789</p>
+            <p>โทรสาร 0-2375-0791-2</p>
+            <p>
+              อีเมล{' '}
+              <a href="mailto:sgw_th@outlook.com" className="footer-link">
+                sgw_th@outlook.com
+              </a>
+            </p>
+
+            <div className="footer-social">
+              <a
+                href="https://line.me/R/ti/p/@sgw_th?from=page&searchId=sgw_th"
+                className="footer-social-item"
+                aria-label="Add LINE: sgw_th"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/line-icon.png" // TODO: update path
+                  alt="LINE"
+                  width={32}
+                  height={32}
+                />
+              </a>
+
+              <a
+                href="https://www.facebook.com/siamgroundwater"
+                className="footer-social-item"
+                aria-label="Visit Siam Groundwater on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/facebook-icon.png" // TODO: update path
+                  alt="Facebook"
+                  width={32}
+                  height={32}
+                />
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Column 3: Contact */}
-        <div className="footer-column">
-          <h3 className="footer-title">{t(`contact.headline`)}</h3>
-          <p>
-            {t(`contact.phone`)}: <a href="tel:0647762422">064-776-2422</a>
-          </p>
-          <p>
-            LINE ID:{' '}
-            <a
-              href="https://line.me/R/ti/p/@104jsghy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @Caroline.Clinic
-            </a>
-          </p>
-          <a
-            href="https://maps.app.goo.gl/VxFkESDBwmqgr8Jh6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>{t(`contact.addressInfo`)}</p>
-          </a>
-
-          <p> {t(`contact.open_time_`)}</p>
+        <div className="footer-bottom">
+          <p>© {currentYear} SIAMGROUNDWATER CO., LTD.</p>
         </div>
       </div>
-      <LanguageSwitcher />
-      {/* Bottom bar */}
-      <div className="footer-bottom">
-        <div className="footer-bar-gradient" />
-        <p>
-          © {new Date().getFullYear()} Caroline Clinic. All rights reserved.
-        </p>
-      </div>
+
+      {showBackToTop && (
+        <button
+          type="button"
+          className="footer-back-to-top"
+          onClick={handleBackToTop}
+          aria-label="Back to top"
+        >
+          <span className="sr-only">Back to top</span>
+          <Image
+            src="/images/back-to-top.png" // TODO: update path
+            alt=""
+            width={36}
+            height={36}
+          />
+        </button>
+      )}
     </footer>
   )
 }

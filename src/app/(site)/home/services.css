@@ -3,25 +3,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 4rem;
   flex-wrap: wrap;
+  padding-bottom: 4rem;
 }
 
 /* Illustration on the left */
-.home-services-illustration {
-}
-
 .home-services-illustration-image {
-  width: 100%;
+  width: 38rem;
   height: auto;
   display: block;
+  transform-origin: center;
+  animation: breathing 4s ease-in-out infinite;
+  will-change: transform;
 }
+
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 
 /* Text + cards */
 .home-services-content {
-  flex: 1 1 420px;
-  max-width: 720px;
+  width: 32rem;
 }
 
 .home-services-title {
@@ -34,27 +43,23 @@
 
 /* Cards grid */
 .home-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap : 0.8rem;
 }
 
 /* Single card */
 .home-service-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  padding: 1.5rem 1.25rem;
+  padding: 0.6rem;
   border-radius: 1.25rem;
-
   background: rgba(6, 40, 55, 0.85);
-  border: 1px solid rgba(148, 163, 184, 0.4);
+  border: 2px solid rgba(148, 163, 184, 0.4);
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.45);
 
-  text-align: center;
   color: #e5e7eb;
-  text-decoration: none;
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease,
@@ -75,9 +80,12 @@
 }
 
 /* Icon */
+.home-service-icon{
+}
 .home-service-icon img {
-  width: 120px;
-  height: 120px;
+  width: 4rem;
+  height: auto;  
+  display: block;
 }
 
 /* Text */
@@ -86,18 +94,3 @@
   line-height: 1.6;
 }
 
-/* Mobile tweaks */
-@media (max-width: 768px) {
-  .home-services {
-    padding: 3rem 1.25rem;
-    gap: 2rem;
-  }
-
-  .home-services-title {
-    text-align: center;
-  }
-
-  .home-services-content {
-    max-width: 100%;
-  }
-}

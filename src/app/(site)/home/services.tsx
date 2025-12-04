@@ -8,21 +8,25 @@ const SERVICES = [
     href: '/survey',
     label: 'สำรวจศึกษาน้ำบาดาล น้ำแร่ น้ำพุร้อน EIA',
     alt: 'สำรวจศึกษาน้ำบาดาล',
+    image: '/images/logo/services/survey.png',
   },
   {
     href: '/drilling',
     label: 'เจาะบ่อน้ำบาดาล บ่อน้ำแร่ บ่อน้ำพุร้อน บ่อสูบลดระดับน้ำ',
     alt: 'เจาะบ่อน้ำบาดาล',
+    image: '/images/logo/services/well-drilling.png',
   },
   {
     href: '/maintenance',
     label: 'ซ่อมบำรุงรักษาบ่อน้ำบาดาล และเครื่องสูบน้ำ',
     alt: 'ซ่อมบำรุงรักษาบ่อน้ำบาดาล',
+    image: '/images/logo/services/maintenance.png',
   },
   {
-    href: '/solving-problem',
+    href: '/consult',
     label: 'แก้ไขโครงการที่เจาะน้ำบาดาลขึ้นมาใช้แล้วมีปัญหาและเสียหาย',
     alt: 'แก้ไขปัญหาโครงการน้ำบาดาล',
+    image: '/images/logo/services/consult.png',
   },
 ]
 
@@ -52,7 +56,7 @@ export default function Services() {
             >
               <div className="home-service-icon">
                 <Image
-                  src="/images/logo/logo_SGW_white.svg"
+                  src={service.image}
                   alt={service.alt}
                   width={120}
                   height={120}

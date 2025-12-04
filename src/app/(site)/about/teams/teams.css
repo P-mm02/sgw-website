@@ -52,13 +52,12 @@
 .teams-groups {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1rem;
 }
 
 .teams-group-card {
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  padding: 16px 16px 20px;
   background: #ffffff;
   scroll-margin-top: 120px;
 
@@ -71,7 +70,7 @@
   justify-content: space-between;
   background: transparent;
   border: none;
-  padding: 1rem;
+  padding: 1.4rem;
   cursor: pointer;
   text-align: left;
 }

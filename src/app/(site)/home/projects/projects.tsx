@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ChangeEvent } from 'react'
 import Link from 'next/link'
 import projectsData from '../projects.json'
+import './projects.css'
 
 // ---- Types ----
 type ProjectContent = {
@@ -19,7 +20,7 @@ type Project = {
   lat: number
   lng: number
   coverImage: string
-  category: string[] // 👈 array of strings
+  category: string[]
   contents: ProjectContent[]
 }
 
@@ -36,15 +37,32 @@ type FilterCategory =
   | 'วัด โรงเรียน'
   | 'Dewatering'
 
+type ItemsPerPage = 10 | 20 | 50 | 100 | 'all'
+
 const projects = projectsData as Project[]
 
 export default function ProjectsSection() {
   const [category, setCategory] = useState<FilterCategory>('all')
+  const [itemsPerPage, setItemsPerPage] = useState<ItemsPerPage>(10)
 
   const filteredProjects =
     category === 'all'
       ? projects
       : projects.filter((p) => p.category.includes(category))
+
+  const displayedProjects =
+    itemsPerPage === 'all'
+      ? filteredProjects
+      : filteredProjects.slice(0, itemsPerPage)
+
+  const handleItemsPerPageChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value
+    if (value === 'all') {
+      setItemsPerPage('all')
+    } else {
+      setItemsPerPage(Number(value) as ItemsPerPage)
+    }
+  }
 
   return (
     <section className="home-projects thirdBackground">
@@ -142,24 +160,44 @@ export default function ProjectsSection() {
             Dewatering
           </button>
         </div>
+
+        {/* toolbar: items-per-page + count */}
+        <div className="projects-subheader">
+          <div className="projects-count">
+            แสดง {displayedProjects.length.toLocaleString('th-TH')} /{' '}
+            {filteredProjects.length.toLocaleString('th-TH')} โครงการ
+          </div>
+
+          <div className="projects-page-size">
+            <label>
+              แสดงสูงสุด:{' '}
+              <select
+                value={itemsPerPage === 'all' ? 'all' : itemsPerPage}
+                onChange={handleItemsPerPageChange}
+              >
+                <option value="10">10 รายการ</option>
+                <option value="20">20 รายการ</option>
+                <option value="50">50 รายการ</option>
+                <option value="100">100 รายการ</option>
+                <option value="all">ทั้งหมด</option>
+              </select>
+            </label>
+          </div>
+        </div>
       </div>
 
       <div className="projects-grid display-posts-listing">
-        {filteredProjects.map((project) => (
+        {displayedProjects.map((project) => (
           <article key={project._id} className="listing-item project-card">
-            <div className="image">
-              <Link
-                //href={project.contents?.[0]?.image || '#'}
-                href={'#'}
-                className="removeUnderLine"
-              >
+            <div className="image project-card-image-wrapper">
+              <Link href={'#'} className="removeUnderLine">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={project.coverImage}
+                  src={'/images/logo/logo_SGW_white.svg'}
                   alt={project.title}
                   width={800}
                   height={600}
-                  style={{ borderRadius: 10, width: '100%', height: 'auto' }}
+                  className="project-card-image"
                 />
               </Link>
             </div>

@@ -112,7 +112,7 @@ export default function Footer() {
         >
           <span className="sr-only">Back to top</span>
           <Image
-            src="/images/back-to-top.png" // TODO: update path
+            src="/images/logo/logo_SGW_white.svg"
             alt=""
             width={36}
             height={36}

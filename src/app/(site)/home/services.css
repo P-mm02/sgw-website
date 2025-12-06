@@ -30,7 +30,7 @@
 
 /* Text + cards */
 .home-services-content {
-  width: 32rem;
+  width: 34rem;
 }
 
 .home-services-title {
@@ -80,8 +80,6 @@
 }
 
 /* Icon */
-.home-service-icon{
-}
 .home-service-icon img {
   width: 4rem;
   height: auto;  
@@ -90,7 +88,7 @@
 
 /* Text */
 .home-service-text {
-  font-size: 0.98rem;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 

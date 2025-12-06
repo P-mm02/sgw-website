@@ -4,23 +4,58 @@
 📄 package-lock.json
 📄 package.json
 📁 public
+  📁 icons
+    📁 flags
+      📄 en-UK.svg
+      📄 ja-Japan.svg
+      📄 th-Thailand.svg
+      📄 zh-China.svg
   📁 images
     📁 BG
+      📄 about-us.jpg
       📄 under-water-1.png
       📄 under-water-2.png
       📄 under-water-3.png
       📄 under-water-5.png
+    📁 logo
+      📄 logo_SGW_white.svg
+      📁 services
+    📁 personnel
+      📄 GM.png
+      📄 MD.jpg
+      📄 Nee.png
+      📄 Nooch.png
+      📄 Peak.png
+      📄 Terng.png
+      📄 Top.png
+      📄 user.png
+      📄 Wee.jpg
+  📁 services
+    📄 services-BG-2.png
+    📄 services-BG.png
 📄 README.md
 📁 scripts
+  📄 convertProjectsToNewShape.js
   📄 file-structure.txt
   📄 generate-tree.js
 📁 src
   📁 app
     📁 (site)
+      📁 about
       📄 favicon.ico
+      📁 home
       📄 layout.tsx
       📄 page.tsx
     📁 admin
+      📄 layout.tsx
+      📄 page.tsx
+  📁 components
+    📁 Footer
+      📄 Footer.css
+      📄 Footer.tsx
+    📁 Navbar
+      📄 Navbar.css
+      📄 Navbar.tsx
   📁 styles
     📄 globals.css
 📄 tsconfig.json

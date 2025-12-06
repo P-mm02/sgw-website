@@ -10,7 +10,7 @@
 
 /* full-height inner bar */
 .navbar-inner {
-  height: 7rem;
+  height: 6rem;
   width: 100%;
   display: flex;
   align-items: stretch;

@@ -1,0 +1,93 @@
+.home-map-section {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 1.25rem;
+  background: radial-gradient(circle at top left, #1e293b, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.65),
+    0 0 0 1px rgba(15, 23, 42, 0.8);
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.home-map-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  color: #f9fafb;
+  text-align: center;
+}
+
+
+
+/* Map container wrapper */
+.home-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #020617;
+  z-index: 49;
+}
+
+/* This class is applied directly on MapContainer */
+.home-map-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Leaflet default tweaks for dark background */
+.home-map-wrapper .leaflet-container {
+  background: #020617;
+}
+
+/* Popup styling */
+.home-map-popup {
+  font-size: 0.85rem;
+  color: #111827;
+}
+
+.home-map-popup-title {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.home-map-popup-line {
+  color: #4b5563;
+}
+
+.leaflet-bottom.leaflet-right{
+  display: none;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .home-map-section {
+    padding: 2.25rem 2rem;
+  }
+
+  .home-map-title {
+    font-size: 1.75rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home-map-wrapper {
+    height: 80vw;
+  }
+
+  .home-map-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .home-map-header {
+    align-items: flex-start;
+  }
+
+}

@@ -44,49 +44,17 @@ export default function Teams() {
     }))
   }
 
-  // When clicking a summary card: open the group + scroll to its card
-  const openAndScrollToGroup = (id: string) => {
-    // make sure this group is open
-    setOpenGroups((prev) => ({
-      ...prev,
-      [id]: true,
-    }))
-
-    // scroll to the group card
-    if (typeof window !== 'undefined') {
-      const el = document.getElementById(`teams-group-${id}`)
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-    }
-  }
 
   return (
     <section className="teams-section">
       <h2 className="teams-title">ทีมงาน สยามกราวด์วอเตอร์</h2>
-
-      {/* Summary cards */}
-      <div className="teams-summary-grid">
-        {TEAM_GROUPS.map((group) => (
-          <div
-            key={group.id}
-            className="teams-summary-card"
-            onClick={() => openAndScrollToGroup(group.id)}
-          >
-            <div className="teams-summary-header">
-              <span className="teams-summary-label">{group.label}</span>
-            </div>
-            <p className="teams-summary-text">{group.summary}</p>
-          </div>
-        ))}
-      </div>
 
       {/* Org-chart style groups */}
       <div className="teams-groups">
         {TEAM_GROUPS.map((group) => (
           <div
             key={group.id}
-            id={`teams-group-${group.id}`} // <- target for scrollIntoView
+            id={`teams-group-${group.id}`}
             className="teams-group-card"
           >
             <div className="teams-group-header">
@@ -95,16 +63,19 @@ export default function Teams() {
                 className="teams-group-toggle"
                 onClick={() => toggleGroup(group.id)}
               >
-                <span className="teams-group-title">{group.label}</span>
-                <span
-                  className={
-                    openGroups[group.id]
-                      ? 'teams-group-toggle-icon open'
-                      : 'teams-group-toggle-icon'
-                  }
-                >
-                  ▾
-                </span>
+                <div className="teams-group-toggle-inner">
+                  <span className="teams-group-title">{group.label}</span>
+                  <span
+                    className={
+                      openGroups[group.id]
+                        ? 'teams-group-toggle-icon open'
+                        : 'teams-group-toggle-icon'
+                    }
+                  >
+                    ▾
+                  </span>
+                </div>
+                <span className="teams-group-summary">{group.summary}</span>
               </button>
             </div>
 

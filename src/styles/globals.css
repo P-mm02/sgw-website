@@ -118,6 +118,10 @@ a {
   text-align: left !important;
 }
 
+.text-indent {
+  text-indent: 2rem;
+}
+
 /* 📧 Wrap long text like email or address */
 .text-wrap {
   white-space: normal !important;

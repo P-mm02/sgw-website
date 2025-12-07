@@ -9,8 +9,14 @@
 }
 
 /* Illustration on the left */
+.home-services-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .home-services-illustration-image {
-  width: 38rem;
+  max-width: 40rem;
+  width: 96%;
   height: auto;
   display: block;
   transform-origin: center;
@@ -30,7 +36,8 @@
 
 /* Text + cards */
 .home-services-content {
-  width: 34rem;
+  max-width: 42rem;
+  width: 96%;
 }
 
 .home-services-title {

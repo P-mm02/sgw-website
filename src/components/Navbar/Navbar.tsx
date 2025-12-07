@@ -19,7 +19,7 @@ const NAV_ITEMS: NavItem[] = [
 
   {
     label: 'บริการของเรา',
-    href: '#services',
+    href: '/services',
     subNav: [
       {
         label: 'สำรวจศึกษาบ่อน้ำบาดาล น้ำแร่ น้ำพุร้อน และรายงาน EIA',

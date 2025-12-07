@@ -1,52 +1,14 @@
 .teams-section {
-  margin-top: 40px;
+  margin-bottom: 2rem;
 }
 
 /* Title */
 .teams-title {
   text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 24px;
+  margin: 4rem 0 2rem 0;
 }
 
-/* Summary cards (no counts) */
-.teams-summary-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.teams-summary-card {
-  border-radius: 12px;
-  border: 1px solid #dde3ea;
-  padding: 14px 16px;
-  background: #f8fafc;
-  box-shadow: 0 4px 6px rgba(15, 23, 42, 0.1);
-}
-.teams-summary-card:hover {
-  cursor: pointer;
-  background: #ebf5ff;
-}
-
-.teams-summary-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-
-.teams-summary-label {
-  font-weight: 600;
-  color: #0f766e;
-}
-
-.teams-summary-text {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #4b5563;
-}
 
 /* Groups container */
 .teams-groups {
@@ -66,8 +28,9 @@
 .teams-group-toggle {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
   background: transparent;
   border: none;
   padding: 1.4rem;
@@ -80,9 +43,21 @@
   outline-offset: 2px;
 }
 
+.teams-group-toggle-inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .teams-group-title {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.teams-group-summary {
+  font-size: 1rem;
+  color: #464a51;
 }
 
 .teams-group-toggle-icon {

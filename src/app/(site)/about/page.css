@@ -18,23 +18,6 @@
   margin: 0 auto;
 }
 
-.about-content h2 {
-  font-size: 1.6rem;
-  margin-top: 40px;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.about-content h3 {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-.about-content p {
-  margin-bottom: 14px;
-}
-
 .about-founder-header{
     text-align: start;
 }
@@ -44,6 +27,7 @@
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
+    margin-top: 6rem;
     padding: 1rem;
 }
 .about-founder img {
@@ -82,13 +66,9 @@
 
 
 /* Responsive layout */
-@media (min-width: 768px) {
-  .about-title {
-    font-size: 3rem;
+@media (max-width: 768px) {
+  .about-founder {
+    gap: 2rem;
   }
-
-  .about-container {
-    padding: 56px 24px 80px;
-  } 
 }
 

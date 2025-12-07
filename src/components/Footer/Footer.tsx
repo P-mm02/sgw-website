@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="footer-info">
             <Link href="/" className="footer-logo">
               <Image
-                src="/images/logo-sgw.png" // TODO: update path
+                src="/images/logo/logo_SGW_white.svg" // TODO: update path
                 alt="Siam Groundwater logo"
                 width={80}
                 height={80}
@@ -73,7 +73,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/images/line-icon.png" // TODO: update path
+                  src="/images/logo/logo_SGW_white.svg" // TODO: update path
                   alt="LINE"
                   width={32}
                   height={32}
@@ -88,7 +88,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/images/facebook-icon.png" // TODO: update path
+                  src="/images/logo/logo_SGW_white.svg" // TODO: update path
                   alt="Facebook"
                   width={32}
                   height={32}

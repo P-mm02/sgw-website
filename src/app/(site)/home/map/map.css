@@ -65,15 +65,72 @@
   display: none;
 }
 
+/* Cluster icons */
+/* Base cluster bubble */
+.home-map-cluster-icon {
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 0 1px rgba(15, 23, 42, 0.9),
+    0 14px 28px rgba(15, 23, 42, 0.85);
+  color: #f9fafb;
+}
+
+.home-map-cluster-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* 🎨 Buckets: adjust colors however you like */
+
+/* 1–4 */
+.home-map-cluster-bucket-1 {
+  background: radial-gradient(circle at 30% 30%, #38bdf8, #0f172a);
+  border: 1px solid rgba(56, 189, 248, 0.9);
+}
+
+/* 5–9 */
+.home-map-cluster-bucket-2 {
+  background: radial-gradient(circle at 30% 30%, #22c55e, #052e16);
+  border: 1px solid rgba(34, 197, 94, 0.9);
+}
+
+/* 10–19 */
+.home-map-cluster-bucket-3 {
+  background: radial-gradient(circle at 30% 30%, #a855f7, #3b0764);
+  border: 1px solid rgba(168, 85, 247, 0.9);
+}
+
+/* 20–39 */
+.home-map-cluster-bucket-4 {
+  background: radial-gradient(circle at 30% 30%, #f97316, #7c2d12);
+  border: 1px solid rgba(249, 115, 22, 0.9);
+}
+
+/* 40–79 */
+.home-map-cluster-bucket-5 {
+  background: radial-gradient(circle at 30% 30%, #facc15, #713f12);
+  border: 1px solid rgba(250, 204, 21, 0.9);
+  color: #111827;
+}
+
+/* 80+ */
+.home-map-cluster-bucket-6 {
+  background: radial-gradient(circle at 30% 30%, #fb7185, #881337);
+  border: 1px solid rgba(248, 113, 113, 0.95);
+}
+
+
 /* Responsive */
 @media (min-width: 1024px) {
-  .home-map-section {
-    padding: 2.25rem 2rem;
-  }
 
-  .home-map-title {
-    font-size: 1.75rem;
-  }
 }
 
 

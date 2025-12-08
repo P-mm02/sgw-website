@@ -13,7 +13,6 @@
   gap: 1.5rem;
 }
 
-
 .home-map-title {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -21,8 +20,6 @@
   color: #f9fafb;
   text-align: center;
 }
-
-
 
 /* Map container wrapper */
 .home-map-wrapper {
@@ -76,8 +73,8 @@
     0 0 0 1px rgba(15, 23, 42, 0.9),
     0 14px 28px rgba(15, 23, 42, 0.85);
   color: #f9fafb;
+  z-index: 999 !important;
 }
-
 .home-map-cluster-icon span {
   display: flex;
   align-items: center;

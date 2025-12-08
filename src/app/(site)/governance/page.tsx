@@ -19,7 +19,7 @@ export default function GovernancePage() {
         <div className="governance-poster-frame">
           <div className="governance-poster-inner">
             <Image
-              src="/images/governance/Poster_โครงการรักษ์น้ำบาดาล.svg"
+              src="/images/governance/Poster_โครงการรักษ์น้ำบาดาล.png"
               alt="Poster โครงการรักษ์น้ำบาดาล แสดงโครงสร้าง Governance น้ำบาดาล"
               width={1200}
               height={1700}

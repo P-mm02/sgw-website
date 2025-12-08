@@ -25,7 +25,6 @@
     radial-gradient(circle at 0 0, rgba(56, 189, 248, 0.18), transparent 55%),
     rgba(15, 23, 42, 0.85);
 
-    text-wrap: nowrap;
 }
 
 
@@ -79,3 +78,8 @@
   background-color: #020617; /* fallback while loading */
 }
 
+@media (max-width: 768px) {
+  .governance-eyebrow {
+    font-size: 1.8rem;
+  }
+}

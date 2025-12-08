@@ -46,6 +46,7 @@
   margin-bottom: 1.5rem;
   text-align: left;
   color: #e5f4ff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Cards grid */
@@ -97,5 +98,6 @@
 .home-service-text {
   font-size: 1.4rem;
   line-height: 1.6;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 

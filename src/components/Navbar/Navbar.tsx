@@ -42,7 +42,7 @@ const NAV_ITEMS: NavItem[] = [
 
   {
     label: 'ผลงานของเรา',
-    href: '#projects',
+    href: '/projects',
     subNav: [
       { label: 'งานรัฐบาล', href: '#projects-government' },
       { label: 'งานเอกชน', href: '#projects-private' },

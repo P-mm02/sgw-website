@@ -7,6 +7,7 @@
   text-align: center;
   font-size: 1.8rem;
   margin: 4rem 0 2rem 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -20,9 +21,9 @@
 .teams-group-card {
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  background: #ffffff;
-  scroll-margin-top: 120px;
-
+  background: #ffffffe4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .teams-group-toggle {
@@ -36,12 +37,17 @@
   padding: 1.4rem;
   cursor: pointer;
   text-align: left;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
-.teams-group-toggle:focus-visible {
-  outline: 2px solid #0f766e;
-  outline-offset: 2px;
+.teams-group-toggle:hover {
+  color: #118e7b;
+  background-color: rgba(148, 163, 184, 0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12); /* subtle lift */
 }
+
 
 .teams-group-toggle-inner {
   display: flex;
@@ -77,7 +83,7 @@
   justify-content: center;
   align-items: start;
   gap: 1rem;
-  margin-top: 8px;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 

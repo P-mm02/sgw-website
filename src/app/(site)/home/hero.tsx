@@ -1,18 +1,21 @@
 // src/app/(site)/home/hero.tsx
 
+import Link from 'next/link'
 import './hero.css'
 
 export default function Hero() {
   return (
     <section className="home-hero">
       <div className="home-hero-inner headerText homeHead">
-        <div className="home-hero-pill">โครงการรักษ์น้ำบาดาล</div>
-        <p className="home-hero-tagline">• เจาะบ่อคุณภาพดี ทำความดีตอบแทนแผ่นดิน •</p>
+        <Link href="/governance" className="home-hero-pill">
+          โครงการรักษ์น้ำบาดาล
+        </Link>
 
-        <h1 className="home-hero-heading">
-          WE KNOW GROUNDWATER
-        </h1>
+        <p className="home-hero-tagline">
+          • เจาะบ่อคุณภาพดี ทำความดีตอบแทนแผ่นดิน •
+        </p>
 
+        <h1 className="home-hero-heading">WE KNOW GROUNDWATER</h1>
 
         <p className="home-hero-body">
           เราจะเป็นผู้นำด้านการเจาะบ่อน้ำบาดาลคุณภาพดี

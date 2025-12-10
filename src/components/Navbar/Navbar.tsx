@@ -43,15 +43,11 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: 'ผลงานของเรา',
     href: '/projects',
-    subNav: [
-      { label: 'งานรัฐบาล', href: '#projects-government' },
-      { label: 'งานเอกชน', href: '#projects-private' },
-    ],
   },
 
   { label: 'บรรษัทบริบาล', href: '/governance' },
   { label: 'ข่าวสารและกิจกรรม', href: '#news' },
-  { label: 'ติดต่อเรา', href: '#contact' },
+  { label: 'ติดต่อเรา', href: '/contact' },
 ]
 
 const LANG_FLAGS = [

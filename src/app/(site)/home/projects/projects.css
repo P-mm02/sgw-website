@@ -85,13 +85,14 @@
 }
 
 .filter-button:hover {
-  background-color: #517880;
+  background-color: #3e7c88d5;
+  border-color: #cfefff;
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .filter-button.active {
-  background-color: #517880;
+  background-color: #3e7c88d5;
   border-color: #cfefff;
 }
 

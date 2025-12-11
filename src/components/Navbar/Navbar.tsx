@@ -44,9 +44,43 @@ const NAV_ITEMS: NavItem[] = [
     label: 'ผลงานของเรา',
     href: '/projects',
   },
-
   { label: 'บรรษัทบริบาล', href: '/governance' },
-  { label: 'ข่าวสารและกิจกรรม', href: '#news' },
+  {
+    label: 'ศูนย์การเรียนรู้',
+    href: '/groundwater-learning',
+    subNav: [
+      {
+        label: 'เครื่องมือคำนวณ',
+        href: '/learn/groundwater-calculator-tools',
+        // groundwater + calculator + tools
+      },
+      {
+        label: 'ความรู้พื้นฐาน เรื่องน้ำบาดาล',
+        href: '/learn/groundwater-basics-thailand',
+        // groundwater + basics + thailand
+      },
+      {
+        label: 'กรณีศึกษา ใช้น้ำบาดาล แล้วเกิดความเสียหาย',
+        href: '/learn/groundwater-case-studies-problems',
+        // groundwater + case studies + problems
+      },
+      {
+        label: 'กฎหมายน้ำบาดาล',
+        href: '/learn/groundwater-law-regulation-thailand',
+        // groundwater + law + regulation + thailand
+      },
+      {
+        label: 'คำถามที่พบบ่อย (FAQ)',
+        href: '/learn/groundwater-faq-thailand',
+        // groundwater + faq + thailand
+      },
+      {
+        label: 'คู่มือสำหรับโรงงาน / โรงแรม / รีสอร์ท',
+        href: '/learn/groundwater-guide-factory-hotel-resort',
+        // groundwater + guide + factory + hotel + resort
+      },
+    ],
+  },
   { label: 'ติดต่อเรา', href: '/contact' },
 ]
 

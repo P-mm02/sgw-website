@@ -1,0 +1,213 @@
+.groundwater-learning-page {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+/* Centered max-width container for hero + body */
+.groundwater-learning-hero,
+.groundwater-learning-sections {
+  margin: 0 auto;
+}
+
+/* ---------- Hero ---------- */
+
+.groundwater-learning-hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.groundwater-learning-title-th {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.groundwater-learning-title-en {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.groundwater-learning-intro {
+  margin-top: 0.5rem;
+  line-height: 1.7;
+  color: #e0e3e8;
+  max-width: 48rem;
+  text-indent: 2rem;
+}
+
+
+/* Audience box */
+
+.groundwater-learning-audience {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 60%),
+    rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.groundwater-learning-audience-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.groundwater-learning-audience ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ecf0ff;
+}
+
+/* ---------- Sections grid ---------- */
+
+.groundwater-learning-sections-header {
+  margin-bottom: 1.5rem;
+}
+
+.groundwater-learning-sections-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.groundwater-learning-sections-description {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  max-width: 40rem;
+}
+
+/* Grid */
+
+.groundwater-learning-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+/* On larger screens */
+@media (min-width: 720px) {
+  .groundwater-learning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  .groundwater-learning-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Cards */
+
+.groundwater-learning-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.4rem 1.4rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.13), transparent 60%),
+    rgba(15, 23, 42, 0.95);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.groundwater-learning-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.95);
+  border-color: rgba(56, 189, 248, 0.6);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 60%),
+    rgba(15, 23, 42, 0.98);
+}
+
+.groundwater-learning-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.groundwater-learning-card-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #a5b4fc;
+}
+
+.groundwater-learning-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.groundwater-learning-card-title a {
+  text-decoration: none;
+  color: #f9fafb;
+}
+
+.groundwater-learning-card-title a:hover {
+  text-decoration: underline;
+}
+
+.groundwater-learning-card-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+.groundwater-learning-card-footer {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.groundwater-learning-card-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #38bdf8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.groundwater-learning-card-link:hover .card-link-arrow {
+  transform: translateX(3px);
+}
+
+.card-link-arrow {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+/* ---------- Small screens tweaks ---------- */
+
+@media (max-width: 640px) {
+  .groundwater-learning-page {
+    padding-top: 4.5rem;
+    padding-inline: 1.1rem;
+  }
+
+  .groundwater-learning-intro {
+    font-size: 0.94rem;
+  }
+
+  .groundwater-learning-audience {
+    padding: 1rem 1.1rem;
+  }
+}

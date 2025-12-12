@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import Navbar from '@/components/Navbar/Navbar'
+import NavbarMobile from '@/components/Navbar/mobile/Navbar-mobile'
 import Footer from '@/components/Footer/Footer'
 
 export const metadata: Metadata = {
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen">
-        <Navbar />
+        <Navbar /> {/* desktop / tablet ≥ 769px */}
+        <NavbarMobile /> {/* mobile ≤ 768px */}
         {children}
         <Footer />
       </body>

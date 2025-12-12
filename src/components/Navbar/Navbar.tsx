@@ -1,102 +1,27 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import './Navbar.css'
-
-type SubNavItem = {
-  label: string
-  href: string
-}
-
-type NavItem = {
-  label: string
-  href: string
-  subNav?: SubNavItem[]
-}
-
-const NAV_ITEMS: NavItem[] = [
-  { label: 'หน้าแรก', href: '/home' },
-  { label: 'เกี่ยวกับเรา', href: '/about' },
-
-  {
-    label: 'บริการของเรา',
-    href: '/services',
-    subNav: [
-      {
-        label: 'สำรวจศึกษาบ่อน้ำบาดาล น้ำแร่ น้ำพุร้อน และรายงาน EIA',
-        href: '#service-1',
-      },
-      {
-        label: 'เจาะบ่อน้ำบาดาล บ่อน้ำแร่ บ่อน้ำพุร้อน และบ่อสูบลดระดับน้ำ',
-        href: '#service-2',
-      },
-      {
-        label: 'ซ่อมบำรุงรักษาบ่อน้ำบาดาล และเครื่องสูบน้ำ',
-        href: '#service-3',
-      },
-      {
-        label: 'แก้ไขโครงการที่เจาะน้ำบาดาลขึ้นมาใช้แล้วมีปัญหาและเสียหาย',
-        href: '#service-4',
-      },
-    ],
-  },
-
-  {
-    label: 'ผลงานของเรา',
-    href: '/projects',
-  },
-  { label: 'บรรษัทบริบาล', href: '/governance' },
-  {
-    label: 'ศูนย์การเรียนรู้',
-    href: '/groundwater-learning',
-    subNav: [
-      {
-        label: 'เครื่องมือคำนวณ',
-        href: '/learn/groundwater-calculator-tools',
-        // groundwater + calculator + tools
-      },
-      {
-        label: 'ความรู้พื้นฐาน เรื่องน้ำบาดาล',
-        href: '/learn/groundwater-basics-thailand',
-        // groundwater + basics + thailand
-      },
-      {
-        label: 'กรณีศึกษา ใช้น้ำบาดาล แล้วเกิดความเสียหาย',
-        href: '/learn/groundwater-case-studies-problems',
-        // groundwater + case studies + problems
-      },
-      {
-        label: 'กฎหมายน้ำบาดาล',
-        href: '/learn/groundwater-law-regulation-thailand',
-        // groundwater + law + regulation + thailand
-      },
-      {
-        label: 'คำถามที่พบบ่อย (FAQ)',
-        href: '/learn/groundwater-faq-thailand',
-        // groundwater + faq + thailand
-      },
-      {
-        label: 'คู่มือสำหรับโรงงาน / โรงแรม / รีสอร์ท',
-        href: '/learn/groundwater-guide-factory-hotel-resort',
-        // groundwater + guide + factory + hotel + resort
-      },
-    ],
-  },
-  { label: 'ติดต่อเรา', href: '/contact' },
-]
-
-const LANG_FLAGS = [
-  { code: 'th', src: '/icons/flags/th-Thailand.svg', alt: 'Thai' },
-  { code: 'en', src: '/icons/flags/en-UK.svg', alt: 'English' },
-  { code: 'zh', src: '/icons/flags/zh-China.svg', alt: 'Chinese' },
-  { code: 'jp', src: '/icons/flags/ja-Japan.svg', alt: 'Japanese' },
-]
+import { NAV_ITEMS, LANG_FLAGS } from './nav-config'
 
 export default function Navbar() {
+  const [isLangOpen, setIsLangOpen] = useState(false)
+  const [activeLang, setActiveLang] = useState(LANG_FLAGS[0])
+
+  const toggleLang = () => setIsLangOpen((prev) => !prev)
+  const handleSelectLang = (lang: (typeof LANG_FLAGS)[number]) => {
+    setActiveLang(lang)
+    setIsLangOpen(false)
+    // later: plug real i18n switching here
+  }
+
   return (
-    <header className="navbar">
+    <header className="navbar" role="banner">
       <div className="navbar-inner">
         {/* Logo */}
-        <Link href="/" className="navbar-logo">
+        <Link href="/" className="navbar-logo" aria-label="Siam Groundwater">
           <Image
             src="/images/logo/logo_SGW_white.svg"
             alt="Siam Groundwater"
@@ -106,7 +31,7 @@ export default function Navbar() {
         </Link>
 
         {/* Center nav items + sub nav */}
-        <nav className="navbar-nav">
+        <nav className="navbar-nav" aria-label="Primary navigation">
           {NAV_ITEMS.map((item) => (
             <div
               key={item.label}
@@ -133,18 +58,43 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Language flags */}
-        <div className="navbar-lang">
-          {LANG_FLAGS.map((lang) => (
-            <button
-              key={lang.code}
-              type="button"
-              className="navbar-lang-btn"
-              aria-label={lang.alt}
+        {/* Language dropdown (flag + code) */}
+        <div className="navbar-lang" aria-label="Language selector">
+          <button
+            type="button"
+            className="navbar-lang-btn"
+            onClick={toggleLang}
+            aria-expanded={isLangOpen}
+          >
+            <Image
+              src={activeLang.src}
+              alt={activeLang.alt}
+              width={28}
+              height={20}
+            />
+            <span className="navbar-lang-code">{activeLang.alt}</span>
+            <span
+              className={`navbar-lang-caret ${isLangOpen ? 'is-open' : ''}`}
             >
-              <Image src={lang.src} alt={lang.alt} width={28} height={20} />
-            </button>
-          ))}
+              ▾
+            </span>
+          </button>
+
+          {isLangOpen && (
+            <div className="navbar-lang-menu">
+              {LANG_FLAGS.map((lang) => (
+                <button
+                  key={lang.code}
+                  type="button"
+                  className="navbar-lang-menu-item"
+                  onClick={() => handleSelectLang(lang)}
+                >
+                  <Image src={lang.src} alt={lang.alt} width={24} height={16} />
+                  <span className="navbar-lang-menu-code">{lang.alt}</span>
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </header>

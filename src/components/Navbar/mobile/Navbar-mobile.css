@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 60;
-  background: #024148;
+  background: #024148f3;
   color: #f9fafb;
 }
 
@@ -13,12 +13,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  height: 3.5rem;
+  height: 8rem;
 }
 
 .navbar-mobile-logo {
+  margin-right: 2.1rem;
+  height: 6rem;
+  width: 6rem;
   display: flex;
   align-items: center;
+}
+.navbar-mobile-logo img {
+  height: 100%;
+  width: 100%;
 }
 
 /* hamburger */
@@ -26,7 +33,7 @@
   border: none;
   background: transparent;
   color: #f9fafb;
-  font-size: 1.5rem;
+  font-size: 4rem;
   line-height: 1;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
@@ -35,7 +42,7 @@
 
 /* dropdown menu under bar */
 .navbar-mobile-menu {
-  background: #01353a;
+  background: #01353a6b;
   border-top: 1px solid #0f766e;
 }
 
@@ -51,7 +58,7 @@
   padding: 0.5rem 0.25rem;
   color: #f9fafb;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -67,7 +74,7 @@
   padding: 0.35rem 0.25rem;
   color: #d1d5db;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 
 /* footer area: flags + contact button */
@@ -120,13 +127,18 @@
   cursor: pointer;
   font-size: 0.8rem;
 }
+.navbar-mobile-lang-btn img {
+  height: 2rem;
+  width: auto;
+}
 
 .navbar-mobile-lang-code {
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .navbar-mobile-lang-caret {
-  font-size: 0.7rem;
+  font-size: 2rem;
 }
 
 /* dropdown menu for languages */
@@ -152,11 +164,14 @@
   color: #f9fafb;
   padding: 0.25rem 0.4rem;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 2rem;
 }
-
 .navbar-mobile-lang-menu-item:hover {
   background: rgba(34, 197, 189, 0.2);
+}
+.navbar-mobile-lang-menu-item img {
+  height: 2rem;
+  width: auto;
 }
 
 .navbar-mobile-lang-menu-code {

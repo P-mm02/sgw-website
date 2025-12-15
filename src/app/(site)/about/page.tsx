@@ -1,27 +1,9 @@
-'use client'
+// src/app/(site)/about/page.tsx
 
-import { useRef, useState } from 'react'
 import Image from 'next/image'
 import './page.css'
 import Teams from './teams/teams'
-
-const ABOUT_SLIDES = [
-  {
-    id: 'about-slide-1',
-    src: '/images/about/slide/about-us.jpg',
-    alt: 'ภาพรวมการทำงานของบริษัท สยามกราวด์วอเตอร์',
-  },
-  {
-    id: 'about-slide-2',
-    src: '/images/about/slide/csr.jpg',
-    alt: 'ภาพทีมงานภาคสนามของบริษัท สยามกราวด์วอเตอร์',
-  },
-  {
-    id: 'about-slide-3', // 🔧 fixed id (was about-slide-2)
-    src: '/images/about/slide/csssr.jpg',
-    alt: 'ภาพทีมงานภาคสนามของบริษัท สยามกราวด์วอเตอร์',
-  },
-]
+import HeroSlide from './hero-slide/HeroSlide'
 
 const AWARDS = [
   {
@@ -42,77 +24,14 @@ const AWARDS = [
 ]
 
 export default function AboutPage() {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const sliderRef = useRef<HTMLDivElement | null>(null)
-
-  const handleScroll = () => {
-    const el = sliderRef.current
-    if (!el) return
-
-    const { scrollLeft, clientWidth } = el
-    if (!clientWidth) return
-
-    const index = Math.round(scrollLeft / clientWidth)
-    if (index !== activeIndex && index >= 0 && index < ABOUT_SLIDES.length) {
-      setActiveIndex(index)
-    }
-  }
-
-  const handleDotClick = (index: number) => {
-    setActiveIndex(index)
-
-    const el = sliderRef.current
-    if (!el) return
-
-    const targetX = index * el.clientWidth
-    el.scrollTo({
-      left: targetX,
-      behavior: 'smooth',
-    })
-  }
-
   return (
     <main className="about-container">
       <section className="about-hero">
         <h1 className="about-title">เกี่ยวกับเรา</h1>
       </section>
 
-      {/* 🔹 Hero image slider (public/images/about/slide) */}
-      <section className="about-hero-slider">
-        <div
-          ref={sliderRef}
-          className="about-hero-slider-track"
-          onScroll={handleScroll}
-        >
-          {ABOUT_SLIDES.map((slide) => (
-            <div key={slide.id} id={slide.id} className="about-hero-slide">
-              <Image
-                src={slide.src}
-                alt={slide.alt}
-                width={1440}
-                height={810}
-                className="about-hero-slide-image"
-                priority
-              />
-            </div>
-          ))}
-        </div>
-
-        <div className="about-hero-slider-dots">
-          {ABOUT_SLIDES.map((slide, index) => (
-            <button
-              key={slide.id}
-              type="button"
-              onClick={() => handleDotClick(index)}
-              className={
-                'about-hero-slider-dot' +
-                (index === activeIndex ? ' active' : '')
-              }
-              aria-label={`ไปยังสไลด์ที่ ${index + 1}`}
-            />
-          ))}
-        </div>
-      </section>
+      {/* 🔹 Hero image slider (moved) */}
+      <HeroSlide />
 
       <section className="about-content">
         <div className="about-content-Introduction">
@@ -133,6 +52,7 @@ export default function AboutPage() {
             ครอบคลุมทุกภูมิภาค ทั่วประเทศ
           </p>
         </div>
+
         {/* 🔹 Award slider (public/images/about/award) */}
         <section className="about-awards">
           <div className="about-awards-slider-track">
@@ -152,6 +72,7 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+
         <div className="about-founder">
           <div className="about-founder-image-wrapper">
             <Image
@@ -176,7 +97,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        {/* ทีมงาน สยามกราวด์วอเตอร์ (moved to its own component) */}
+
         <Teams />
       </section>
     </main>

@@ -1,7 +1,7 @@
 import './page.css'
 
 import Hero from './hero'
-import Services from './services'
+import Services from '../services/services'
 import HomeMap from './map/map'
 import HomeTeam from '../about/teams/teams'
 import ProjectsSection from './projects/projects'

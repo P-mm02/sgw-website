@@ -27,19 +27,19 @@ export const NAV_ITEMS: NavItem[] = [
     subNav: [
       {
         label: 'สำรวจศึกษาบ่อน้ำบาดาล น้ำแร่ น้ำพุร้อน และรายงาน EIA',
-        href: '#service-1',
+        href: '/services/survey',
       },
       {
         label: 'เจาะบ่อน้ำบาดาล บ่อน้ำแร่ บ่อน้ำพุร้อน และบ่อสูบลดระดับน้ำ',
-        href: '#service-2',
+        href: '/services/drilling',
       },
       {
         label: 'ซ่อมบำรุงรักษาบ่อน้ำบาดาล และเครื่องสูบน้ำ',
-        href: '#service-3',
+        href: '/services/maintenance',
       },
       {
         label: 'แก้ไขโครงการที่เจาะน้ำบาดาลขึ้นมาใช้แล้วมีปัญหาและเสียหาย',
-        href: '#service-4',
+        href: '/services/consult',
       },
     ],
   },

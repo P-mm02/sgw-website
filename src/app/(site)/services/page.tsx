@@ -1,6 +1,6 @@
 // src/app/(site)/services/page.tsx
 import type { Metadata } from 'next'
-import Services from '../home/services'
+import Services from './services'
 
 export const metadata: Metadata = {
   title: 'บริการของเรา | Siam Groundwater',

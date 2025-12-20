@@ -2,11 +2,18 @@
 
 
 /* 📐 Root font-size for rem scaling */
-html {
-  font-size: 16px !important; /* 1rem = 16px on desktop */
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px !important; /* 1rem = 16px on desktop */
+  }
 }
 
 @media (max-width: 1440px) {
+  html {
+    font-size: 16px !important; /* 1rem = 16px on desktop */
+  }
+
   .DW1440-display-none {
     display: none !important;
   }

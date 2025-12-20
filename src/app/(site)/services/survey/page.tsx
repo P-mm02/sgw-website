@@ -1,8 +1,9 @@
 // src/app/(site)/services/survey/page.tsx
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import './page.css'
+import SurveySlides from './slides'
+
 
 export const metadata: Metadata = {
   title: 'สำรวจศึกษาน้ำบาดาล น้ำแร่ น้ำพุร้อน EIA | Siam Groundwater',
@@ -168,31 +169,7 @@ export default function SurveyServicePageTH() {
           </div>
 
           <div className="sv-hero-media" aria-label="ตัวอย่างภาพงานสำรวจ">
-            {/* เปลี่ยนเป็นรูปจริงของคุณใน /public/images/services/survey/ */}
-            <div className="sv-media-card">
-              <Image
-                className="sv-img"
-                src="/images/services/survey/services-survey-1.jpg"
-                alt="สำรวจธรณีฟิสิกส์เพื่อกำหนดจุดเจาะ"
-                width={1400}
-                height={820}
-                priority
-              />
-              <p className="sv-caption">สำรวจธรณีฟิสิกส์เพื่อกำหนดจุดเจาะ</p>
-            </div>
-
-            <div className="sv-media-card sv-media-card-2">
-              <Image
-                className="sv-img"
-                src="/images/services/survey/cover-2.jpg"
-                alt="สำรวจชั้นน้ำบาดาลด้วยเครื่องหยั่งธรณีฟิสิกส์ (Electric Log)"
-                width={1400}
-                height={820}
-              />
-              <p className="sv-caption">
-                ตรวจสอบชั้นน้ำและคุณภาพน้ำด้วย Electric Log
-              </p>
-            </div>
+            <SurveySlides />
           </div>
         </div>
       </header>

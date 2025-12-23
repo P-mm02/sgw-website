@@ -64,11 +64,11 @@
   transform: translateY(-50%);
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(0, 0, 0, 0.35);
+  width: 20%;
+  height: 100%;
+  border-radius: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0);
   color: rgba(255, 255, 255, 0.95);
   cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
@@ -78,7 +78,7 @@
 .slider__btn:hover {
   transform: translateY(-50%) translateY(-1px);
   border-color: rgba(255, 255, 255, 0.28);
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .slider__btn:focus-visible {
@@ -87,11 +87,11 @@
 }
 
 .slider__btn--left {
-  left: 10px;
+  left: 0;
 }
 
 .slider__btn--right {
-  right: 10px;
+  right: 0;
 }
 
 .slider__dots {

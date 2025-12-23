@@ -165,7 +165,7 @@ export default function Slider({
           onClick={prev}
           aria-label="Previous slide"
         >
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
             <path
               d="M15 18l-6-6 6-6"
               fill="none"
@@ -183,7 +183,7 @@ export default function Slider({
           onClick={next}
           aria-label="Next slide"
         >
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
             <path
               d="M9 6l6 6-6 6"
               fill="none"
